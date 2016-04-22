@@ -1,0 +1,31 @@
+/* Theme Name: The Project - Responsive Website Template
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Author e-mail:htmlcoder.me@gmail.com
+Version:1.2.0
+Created:December 2014
+License URI:http://support.wrapbootstrap.com/
+File Description: Place here your custom CSS styles
+*/
+
+.body-custom{
+	margin-bottom: 200px;
+}
+
+.subfooter-custom{
+	height: 80px;
+}
+
+/*.nav > li > a {
+    position: relative;
+    padding: 10px 15px;
+}*/
+
+.nav.nav-pills.nav-stacked a{
+  display: inline-block;
+
+}
+
+.nav-pills.nav-stacked:not(.list-style-icons) > li > a:after {
+  display: none;
+}
