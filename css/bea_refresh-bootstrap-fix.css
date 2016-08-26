@@ -1,0 +1,157 @@
+
+
+/* 
+	GENERAL
+*/
+
+body {
+	background-color: transparent;
+}
+/* ======================================================================================================================================== */
+
+.btn-warning {
+  color: #fff !important;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+
+.btn-warning:focus,
+.btn-warning.focus {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-warning:hover {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-warning:active:hover,
+.btn-warning.active:hover,
+.open > .dropdown-toggle.btn-warning:hover,
+.btn-warning:active:focus,
+.btn-warning.active:focus,
+.open > .dropdown-toggle.btn-warning:focus,
+.btn-warning:active.focus,
+.btn-warning.active.focus,
+.open > .dropdown-toggle.btn-warning.focus {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled.focus,
+.btn-warning[disabled].focus,
+fieldset[disabled] .btn-warning.focus {
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-warning .badge {
+  color: #DC5F13;
+  background-color: #fff;
+}
+/* ======================================================================================================================================== */
+
+a.btn-primary,
+#content .btn-primary{
+	color:rgba(255,255,255,1.00) !important;}
+	
+/* ======================================================================================================================================== */
+
+.label{
+	font-weight: normal;}
+	
+/* ======================================================================================================================================== */
+
+#content .panel ul{
+	xmargin-left: 0px;
+	xmargin-top: 15px;}
+
+
+.regional #content .panel ul{
+	xmargin-left: 25px;;
+	xmargin-top: inherit;}
+
+
+/* ======================================================================================================================================== */
+.btn-primary {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #DC5F13;
+  border-color: #DC5F13;
+}
+.btn-primary .badge {
+  color: #DC5F13;
+  background-color: #fff;
+}
+/* ======================================================================================================================================== */
+/* ======================================================================================================================================== */
+/* ======================================================================================================================================== */
+/* ======================================================================================================================================== */
+/* ======================================================================================================================================== */
+
+
