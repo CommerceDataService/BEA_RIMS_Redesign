@@ -1,8 +1,3 @@
-/* When BEA code is integrated, this should be deleted */
-body{
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif !important;
-}
-
 /* Side Nav */
 .navbar-fixed-left {
   width: 220px;
@@ -29,6 +24,10 @@ body{
 	padding-left: 130px;
   }
 
+.navbar-fixed-left .fa{
+	vertical-align: middle;
+}
+
 .nav>li>a{
 	display: inline-block;
 	padding: 10px;
@@ -42,9 +41,41 @@ body{
 	width: 180px;
 	border-radius: 0;
 	margin-top: -10px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.nav-button:hover, visited{
+	background-color: #337ab7;
+    border-color: #2e6da4;
+    text-decoration: underline;
 }
 
 #bottom-nav-button{
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+
+#rimsform #sidebarLeft_wrapper .sidebarLeft_baseInsert {
+	height: 100%;
+	padding: 10px;
+	background-color: white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 0px;
+	border-right: .5px solid grey;
+}
+
+#rimsform #sidebarLeft_wrapper{
+	width: 100%;
+    color: rgba(255,255,255,1.00);
+    xfloat: left;
+    position: relative;
+    top: 0px; 
+}
+
+#rimsform #sidebarLeft_wrapper .sidebarLeft_section .menuItem {
+    padding: 6px;
 }
