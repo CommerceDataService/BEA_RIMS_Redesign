@@ -413,15 +413,15 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
 
 <!--*********************START OF NEW MENU*************************-->
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-lg-2 col-md-3 col-sm-3">
                 <div id="sidebarLeft_wrapper">
                     <div class="sidebarLeft_baseInsert">
 <!--                         <a class="logo" href="../index.cfm"></a> -->
                 <a id="Loginlnk" class="btn btn-primary nav-button" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
                 
-                <a id="hlShoppingCart" class="btn btn-primary nav-button" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Shopping Cart</a>
-                        <div class="sidebarLeft_section">
-                            <div class="menuItem"><a href="home.aspx">Shopping Cart</a></div>
+                <a id="hlShoppingCart" class="btn btn-primary nav-button" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
+<!--                         <div class="sidebarLeft_section">
+                            <div class="menuItem"><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="home.aspx">Shopping Cart</a></div>
                             <div class="menuItem"><a href="placeorder.aspx">View Multipliers</a></div>
                             <div class="menuItem"> <a id="hlViewOrder" href="javascript:InvokeLogin(&#39;vieworder.aspx&#39;);">Case Studies</a></div>
                             <div class="menuItem"> <a id="hlUpdateAccount" href="javascript:InvokeLogin(&#39;myaccount.aspx&#39;);">Sample Tables</a></div>
@@ -429,46 +429,47 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
                             <div class="menuItem"><a href="industrylist.aspx?List=3">About RIMS</a></div>
                             <div class="menuItem"><a href="/regional/pdf/rims/rimsii_user_guide.pdf" target="_blank">FAQ's</span></a></div>
                             <div class="menuItem"><a href="help.aspx">Contact Us</a></div>
-                            </div>
+                        </div> -->
+                         <ul class="nav navbar-stacked "> <!--Removed BEA class sidebarLeft_section -->
+                            <li class="menuItem"><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="home.aspx">Shopping Cart</a></li>
+                            <li class="menuItem"><i class="fa fa-file-text-o" aria-hidden="true"></i><a href="placeorder.aspx">View Multipliers</a></li>
+                            <li class="menuItem"><i class="fa fa-newspaper-o" aria-hidden="true"></i><a id="hlViewOrder" href="javascript:InvokeLogin(&#39;vieworder.aspx&#39;);">Case Studies</a></li>
+                            <li class="menuItem"><i class="fa fa-table" aria-hidden="true"></i><a id="hlUpdateAccount" href="javascript:InvokeLogin(&#39;myaccount.aspx&#39;);">Sample Tables</a></li>
+                            <li class="menuItem"><i class="fa fa-list" aria-hidden="true"></i><a href="sampleorderdetail.aspx">Industry Lists</a></li>
+                            <li class="menuItem"><i class="fa fa-bar-chart" aria-hidden="true"></i><a href="industrylist.aspx?List=3">About RIMS</a></li>
+                            <li class="menuItem"><i class="fa fa-question-circle" aria-hidden="true"></i><a href="/regional/pdf/rims/rimsii_user_guide.pdf" target="_blank">FAQ's</span></a></li>
+                            <li class="menuItem"><i class="fa fa-pencil" aria-hidden="true"></i><a href="help.aspx">Contact Us</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <!--*********************END OF NEW MENU*************************-->
 
-            <div class="col-sm-9">
-            <!--*********************Start of Body Content*************************-->
-                
-                
-                    
-    
-    <span>
-    <p>The Regional Input-Output Modeling System (RIMS II), a regional economic model, is a tool used by investors, planners, and elected officials to objectively assess the potential economic impacts of various projects. This model produces multipliers that are used in economic impact studies to estimate the total impact of a project on a region.</p>
-  </span>
-    <hr />
-    <span style="font-size:115%"><b>What are RIMS II multipliers?</b></span>
-    <br /><br />
-          
-      <p>RIMS II input-output multipliers show how local demand shocks affect total gross output, value added, earnings, and employment in the region.</p>
+    <div class="col-lg-10 col-md-9 col-sm-9">
+    <!--*********************Start of Body Content*************************-->
+        <div id="landing-page-div">
+            <h2 id="landing-page-heading"><strong>Welcome to RIMS II Online Order and Delivery System</strong></h2>     
 
-      <p>RIMS II multipliers based on 2007 national benchmark input-output data and 2013 regional data were released in November 2015.
-      The multipliers will be updated with 2014 regional data in 2016.</p>
+            <p id="landing-page-p">The Regional Input-Output Modeling System (RIMS II), a regional economic model, is a tool used by investors, planners, and elected officials to objectively assess the potential economic impacts of various projects. This model produces multipliers that are used in economic impact studies to estimate the total impact of a project on a region.</p>
+        </div>
+        <div id="landing-page-div">
+            <h3 id="landing-page-heading"><b>What are RIMS II multipliers?</b></h3>
+              
+            <p id="landing-page-p">RIMS II input-output multipliers show how local demand shocks affect total gross output, value added, earnings, and employment in the region.</p>
 
-      <p>RIMS II multipliers incorporating BEA’s annual input-output accounts have been discontinued.</p>  
-    <span style="font-size:115%"><b>How much do multipliers cost?</b></span>
-    <br /><br />
-    <ul>
-        <li><b>$275 per Region</b></li>
-    </ul>
-    <p class="homeindent">
-       Multipliers are provided for all industries in the model for the region that is ordered. The region must contain one or more contiguous counties.    
-   </p>
-    <ul>
-        <li><b>$75 per Industry</b></li>
-    </ul>
-    <p class="homeindent">
-        Multipliers are provided for 50 states and the District of Columbia for the industry that is ordered.
-    </p>
-    
+            <p id="landing-page-p">RIMS II multipliers based on 2007 national benchmark input-output data and 2013 regional data were released in November 2015.
+          The multipliers will be updated with 2014 regional data in 2016.</p>
+
+            <p id="landing-page-p">RIMS II multipliers incorporating BEA&#39;s annual input-output accounts have been discontinued.</p>  
+        </div>
+        <div id="landing-page-div">
+            <h3 id="landing-page-heading"><b>How much do multipliers cost?</b></h3>
+                <p id="landing-page-p"><strong>$275 per Region</strong><br>
+                Multipliers are provided for all industries in the model for the region that is ordered. The region must contain one or more contiguous counties.</p>
+                     <br>
+                <p id="landing-page-p"><strong>$75 per Industry</strong><br>
+                Multipliers are provided for 50 states and the District of Columbia for the industry that is ordered.</p>
+        </div>
 <!--     <span style="font-size:115%"><b>What industry detail is available?</b>
     </span><br /><br />
     <ul>
@@ -478,8 +479,8 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
             class="all_links" target="_blank">64 industry aggregates</a><span class="file_size">
                 (PDF)</span>.
     </ul> -->
-    <br />
-    <table id="buttons" width="100%">
+    <!-- <br /> -->
+<!--     <table id="buttons" width="100%">
         <tr>
             <td>
                 <input type="submit" name="ctl00$RIMSPlaceHolder$btnPlaceOrder" value="Place an Order" id="RIMSPlaceHolder_btnPlaceOrder" />&nbsp;
@@ -488,7 +489,7 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
             <td>
                 </td>
         </tr>
-    </table>
+    </table> -->
 
             <!--*********************End of Body Content*************************-->
            </div>
