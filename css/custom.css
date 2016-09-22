@@ -1,0 +1,112 @@
+/* ----------- Side navigation ----------- */
+
+/* nav-button is a new class */
+.nav-button{
+  border-radius: 0;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.nav-button:hover, .nav-button:visited, .nav-button:active, .nav-button:focus{
+  background-color: #126ab5;
+  border-color: #2e6da4;
+  text-decoration: underline;
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #126ab5;
+  border-color: #2e6da4;
+}
+
+/* This code overwrites existing BEA code to alter the side navigation appearance. */
+#rimsform #sidebarLeft_wrapper .sidebarLeft_baseInsert {
+	height: 100%;
+  position: relative;
+	background-color: white;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border-right: .5px solid grey;
+  border-style: solid;
+  border-color: white grey white white;
+  padding: 30px 0 30px 0px;
+  padding-bottom: 100%;
+}
+
+#rimsform #sidebarLeft_wrapper {
+  width: 100%;
+  height: 100%;
+  color: rgba(255,255,255,1.00);
+  xfloat: left;
+  position: relative;
+  top: -35px;
+}
+
+#rimsform #sidebarLeft_wrapper{
+	width: 100%;
+  color: rgba(255,255,255,1.00);
+  xfloat: left;
+  position: relative;
+  top: 0px; 
+}
+
+#rimsform #sidebarLeft_wrapper a {
+    color: black;
+    text-decoration: none;
+}
+
+/* nav is a pre-existing bootstrap class */
+.nav>li>a,  .nav>a>li{
+  display: inline-block; /* makes icons and text display inline */
+  padding: 10px;
+}
+
+.nav>li:hover, .nav>li:visited, .nav>li:active{
+  background-color: #ECEEEE;
+}
+
+.nav .menuItem {
+  border-bottom: .5px solid grey;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 0px !important;
+  color: black;
+}
+
+i{
+  color: black;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+/* ----------- Page Content ----------- */
+
+#landing-page-heading {
+    margin: 30px 15px 15px 0 !important; 
+}
+
+#landing-page-p{
+  margin: 0 0 10px !important;
+}
+
+#landing-page-div{
+  padding-bottom: 10px;
+}
+
+#content ul {
+  margin-left: -13px;
+}
+
+#content{
+  padding: 0px 25px 0px 0px;
+}
