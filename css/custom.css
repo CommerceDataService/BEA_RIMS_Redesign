@@ -65,10 +65,6 @@
     text-decoration: none;
 }
 
-/*#rimsform #sidebarLeft_wrapper a:hover {
-    color: #337ab7;
-}*/
-
 /* nav is a pre-existing bootstrap class */
 .nav>li>a,  .nav>a>li{
   display: inline-block; /* makes icons and text display inline */
@@ -87,19 +83,11 @@
   color: black;
 }
 
-.nav .menuItem i a:hover {
-  color: #337ab7;
-}
-
 i{
   color: black;
   vertical-align: middle;
   padding-right: 5px;
 }
-
-/*i:hover, i:active {
-  color: #337ab7;
-}*/
 
 /* ----------- Page Content ----------- */
 
