@@ -110,3 +110,42 @@ i{
 #content{
   padding: 0px 25px 0px 0px;
 }
+
+/* ----------- Temporary fix for 3 images to show ----------- */
+#header {
+  width: 100%;
+  height: 170px;
+  background-color: #005189;
+  background-image: url("../images/bea-final-logo-blue-backing.png");
+  background-repeat: no-repeat;
+  background-position: 28px 17px;
+  padding-top: 10px;
+  padding-left: 28px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+.search-wrapper .search-textBox .search-input-text {
+  width: 500px;
+  padding: 10px 12px 12px 40px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  background-image: url(../images/icon-search-light.png);
+  background-position: 8px 6px;
+  background-repeat: no-repeat;
+}
+
+#content ul li,
+.footerLinks_wrapper ul li,
+.rims-popup ul li {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 6px;
+  margin-left: 12px;
+  background-image: none; /* This code is needed to overwrite the background image */
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  padding-left: 14px;
+}
