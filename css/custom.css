@@ -89,6 +89,43 @@ i{
   padding-right: 5px;
 }
 
+/* ----------- Breadcrumb styling ----------- */
+
+.breadcrumb {
+  margin-top: 20px;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: white;
+  border-radius: 0px;
+  border-bottom: .5px solid grey;
+}
+.breadcrumb > li {
+  display: inline-block;
+
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: " ";
+/*  height: 26px;
+  width: 26px;
+  line-height: 26px;
+  font-size: 1.4rem;
+  color: black;*/
+}
+.breadcrumb > .active {
+  color: #DC5F13;
+}
+
+.breadcrumb-separator {
+    display:inline-block;
+    height:1em; width:3em;
+    background-color:grey;
+    margin-left:0.5em; margin-right:0.5em;
+}
+
+
 /* ----------- Page Content ----------- */
 
 #landing-page-heading {
