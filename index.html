@@ -414,13 +414,13 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
 
 <!--*********************START OF NEW MENU*************************-->
         <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3" style="height:100%">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3"  style="padding: 0">
                 <div id="sidebarLeft_wrapper">
                     <div class="sidebarLeft_baseInsert">
 <!--                         <a class="logo" href="../index.cfm"></a> -->
                 <a id="Loginlnk" class="btn btn-primary nav-button btn-block" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
                 
-                <a id="hlShoppingCart" class="btn btn-primary nav-button btn-block" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
+                <a id="hlShoppingCart" class="btn btn-primary nav-button btn-block" href="page-one-ordering.html" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
 <!--                         <div class="sidebarLeft_section">
                             <div class="menuItem"><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="home.aspx">Shopping Cart</a></div>
                             <div class="menuItem"><a href="placeorder.aspx">View Multipliers</a></div>
@@ -469,8 +469,9 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
             </div>
             <!--*********************END OF NEW MENU*************************-->
 
-    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-9" >
+    <div class="container col-lg-10 col-md-9 col-sm-8 col-xs-9" >
     <!--*********************Start of Body Content*************************-->
+        <div class="row">
         <div id="landing-page-div">
             <h2 id="landing-page-heading"><strong>Welcome to RIMS II Online Order and Delivery System</strong></h2>     
 
@@ -493,6 +494,7 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
                      <br>
                 <p id="landing-page-p"><strong>$75 per Industry</strong><br>
                 Multipliers are provided for 50 states and the District of Columbia for the industry that is ordered.</p>
+        </div>
         </div>
 <!--     <span style="font-size:115%"><b>What industry detail is available?</b>
     </span><br /><br />

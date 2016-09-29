@@ -198,12 +198,9 @@ i{
 
 /* ----------- Page Content ----------- */
 .container{
-    border-left: .5px solid grey;
+  border-left: .5px solid grey;
   border-style: solid;
-  /*border-color: white grey white white;*/
   padding: 15px 0 30px 0px;
-  /*padding-bottom: 100%;*/
-  /*margin-left: 5px;*/
 }
 
 .container > .row {
