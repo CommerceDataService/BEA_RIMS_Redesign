@@ -2,7 +2,6 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <meta http-equiv="X-UA-Compatible" content="IE=10" />
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> Viewport tag is needed to correct responsiveness --> 
 <head>
 <meta http-equiv=content-type content="text/html; charset=iso-8859-1">
 <meta name="DC.title" content="Bureau of Economic Analysis" />
@@ -58,7 +57,7 @@
 
 <!-- Radhika Custom Styles -->
   <link href="css/custom.css" rel="stylesheet">
-  <script src="https://use.fontawesome.com/196bc67fd8.js"></script>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
 
 <script type="text/javascript">
   //$(document).ready(function() {
@@ -483,17 +482,19 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
 
 
     <!--*********************Start of Body Content*************************-->
+        <div class="container-fluid">
         <div class="row col-lg-10 col-md-10 col-sm-10" id="ordering-heading">
-            <h3 id="landing-page-heading"><strong>Step 1: Region vs. Industry</strong></h3>     
+            <h3 class="landing-page-heading"><strong>Step 1: Region vs. Industry</strong></h3>     
 
-            <p id="landing-page-p">RIMS II multipliers are based on 2007 national benchmark input-output data and 2013 regional data.</p>
+            <p class="landing-page-p">RIMS II multipliers are based on 2007 national benchmark input-output data and 2013 regional data.</p>
             
         </div>
 
-            <div class="row col-lg-2 col-md-2 col-sm-2" style="padding-top: 30px">
+            <div class="row col-lg-2 col-md-2 col-sm-2">
                     <a id="" class="btn btn-primary btn-block body-button">RIMS Assumptions</a>
                    <a id="" class="btn btn-primary btn-block body-button">Things to Consider</a>
             </div>
+
             <div class="row col-lg-6 col-md-6 col-sm-6">
                 <img src="images/BEA-RIMS-Region-Infographic.png" width="200" class="responsive-image">
                     <br>
