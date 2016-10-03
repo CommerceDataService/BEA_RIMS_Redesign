@@ -197,26 +197,30 @@ i{
 .breadcrumb li a:hover:after { border-left-color: #10548e !important; }
 
 /* ----------- Page Content ----------- */
-.container{
+#content .container{
   border-left: .5px solid grey;
   border-style: solid;
   padding: 15px 0 30px 0px;
 }
 
-.container > .row {
+#content .container-fluid {
+  padding-top: 30px;
+}
+
+#content .container > .row {
   padding-left: 30px;
 }
 
 
-#landing-page-heading {
-    margin: 30px 15px 15px 0 !important; 
+.landing-page-heading {
+    margin: 0 15px 15px 0 !important; 
 }
 
-#landing-page-p{
-  margin: 0 0 10px !important;
+.landing-page-p{
+  margin: 0 0 10px 0 !important;
 }
 
-#landing-page-div{
+.landing-page-div{
   padding-bottom: 10px;
 }
 
