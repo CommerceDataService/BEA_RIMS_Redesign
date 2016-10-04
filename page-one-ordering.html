@@ -440,6 +440,10 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
                                 <a href="placeorder.aspx">View Multipliers</a>
                             </li>
                             <li class="menuItem">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <a href="help.aspx">Update Account</a>
+                            </li>
+                            <li class="menuItem">
                                 <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                                 <a id="hlViewOrder" href="javascript:InvokeLogin(&#39;vieworder.aspx&#39;);">Case Studies</a>
                             </li>
@@ -471,14 +475,20 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
     <div class="container col-lg-10 col-md-9 col-sm-8 col-xs-9" >
     <!--********************* Breadcrumbs *********************-->
 
-            <ul class="breadcrumb">
+            <!-- <ul class="breadcrumb">
                 <li><a href="" class="active">Step 1: Region vs. Industry</a></li>
                 <li><a href="" >Step 2: Choose Multipliers</a></li>
                 <li><a href="" >Step 3: View Shopping Cart</a></li>
                 <li><a href="" >Step 4: Checkout</a></li>
-            </ul>
-  
-    
+            </ul> -->
+        <div class="row breadcrumb">
+            <div class="col-lg-8 btn-group btn-breadcrumb">
+                <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a>
+                <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a>
+                <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a>
+                <a href="#" class="btn btn-default">Step 4: Checkout</a>
+            </div>
+        </div>
 
 
     <!--*********************Start of Body Content*************************-->

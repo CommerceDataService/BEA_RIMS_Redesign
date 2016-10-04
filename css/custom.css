@@ -85,116 +85,76 @@ i{
   padding-right: 5px;
 }
 
-/* ----------- Breadcrumb styling ----------- */
+ /*----------- Breadcrumb styling ----------- */
+
+.btn-breadcrumb .btn:not(:last-child):after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 100%;
+  z-index: 3;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid rgb(173, 173, 173);
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 3;
+}
+
+/** The Spacing **/
+.btn-breadcrumb .btn {
+  padding:6px 12px 6px 24px;
+}
+.btn-breadcrumb .btn:first-child {
+  padding:6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+  padding:6px 18px 6px 24px;
+}
+
+/** Default button **/
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+  border-left: 10px solid #fff;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+  border-left: 10px solid #ccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+  border-left: 10px solid #ebebeb;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+  border-left: 10px solid #adadad;
+}
+
+.btn-group .btn-breadcrumb > a:hover {
+  text-decoration: none;
+}
 
 .breadcrumb {
-  padding: 0px 0px;
-  /*margin-bottom: 20px;*/
+  padding: 5px 0px 20px;
   list-style: none;
   background-color: transparent;
   border-radius: 0px;
   border-bottom: .5px solid grey;
-  height: 40px;
-}
-.breadcrumb > li {
-  display: inline-block;
-}
-#content .breadcrumb {
-  margin-left: -1px;
-}
-#content .breadcrumb > li {
-  padding-left: 0;
-}
-/*.breadcrumb > li + li:before {
-  padding: 0 5px;
-  color: #ccc;
-  content: " ";
-  height: 26px;
-  width: 26px;
-  line-height: 26px;
-  font-size: 1.4rem;
-  color: black;
-}*/
-
-.breadcrumb > .active {
-  color: #DC5F13;
-}
-
-.breadcrumb { 
-  list-style: none; 
-  overflow: hidden; 
-}
-.breadcrumb li { 
-  float: left; 
-}
-.breadcrumb li a {
-  color: white;
-  text-decoration: none; 
-  padding: 10px 0 10px 20px;
-  background: #126ab5;                   /* fallback color */
-  background: #126ab5; 
-  position: relative; 
-  display: block;
-  float: left;
-}
-
-.breadcrumb li a:after { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid #126ab5;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; 
-  left: 100%;
-  z-index: 2; 
-}
-
-.breadcrumb li a:before { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 50px solid transparent;       
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; 
   margin-left: 1px;
-  left: 100%;
-  z-index: 2; 
+  /*height: 40px;*/
 }
-
-.breadcrumb > li + li:before {
-    padding: 0 0px;
-    color: #ccc;
-    content: " ";
-}
-
-.breadcrumb li:first-child a {
-  padding-left: 10px;
-}
-.breadcrumb li:nth-child(2) a       { background:        #126ab5; }
-.breadcrumb li:nth-child(2) a:after { border-left-color: #126ab5; }
-.breadcrumb li:nth-child(3) a       { background:        #126ab5; }
-.breadcrumb li:nth-child(3) a:after { border-left-color: #126ab5; }
-.breadcrumb li:nth-child(4) a       { background:        #126ab5; }
-.breadcrumb li:nth-child(4) a:after { border-left-color: #126ab5; }
-.breadcrumb li:nth-child(5) a       { background:        #126ab5; }
-.breadcrumb li:nth-child(5) a:after { border-left-color: #126ab5; }
-.breadcrumb li:last-child a {
-  /*background: transparent !important;*/
-  color: white;
-  pointer-events: none;
-  cursor: default;
-}
-
-.breadcrumb li a:hover { background: #10548e; }
-.breadcrumb li a:hover:after { border-left-color: #10548e !important; }
 
 /* ----------- Page Content ----------- */
 #content .container{
@@ -203,12 +163,13 @@ i{
   padding: 15px 0 30px 0px;
 }
 
-#content .container-fluid {
-  padding-top: 30px;
-}
-
 #content .container > .row {
   padding-left: 30px;
+}
+
+#content .row {
+  margin-right: 0px;
+  margin-left: -15px;
 }
 
 
