@@ -147,7 +147,7 @@ i{
 }
 
 .breadcrumb {
-  padding: 5px 0px 20px;
+  padding: 0px 0px 0px;
   list-style: none;
   background-color: transparent;
   border-radius: 0px;
@@ -156,11 +156,23 @@ i{
   /*height: 40px;*/
 }
 
+.shopping-cart-number {
+  width:40px;
+  height:40px;
+  padding: 10px 0 0 15px;
+  margin-top: 8px;
+  border:1px solid #000;
+}
+
+.shopping-cart-section {
+  border-left: .5px solid grey;
+}
+
 /* ----------- Page Content ----------- */
 #content .container{
   border-left: .5px solid grey;
   border-style: solid;
-  padding: 15px 0 30px 0px;
+  padding: 0px 0 30px 0px;
 }
 
 #content .container > .row {
@@ -183,6 +195,7 @@ i{
 
 .landing-page-div{
   padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 #content ul {
