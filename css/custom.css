@@ -182,63 +182,30 @@ i{
 
  /*----------- Breadcrumb styling ----------- */
 
-.btn-breadcrumb .btn:not(:last-child):after {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 10px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -17px;
-  left: 100%;
-  z-index: 3;
-}
-.btn-breadcrumb .btn:not(:last-child):before {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 10px solid rgb(173, 173, 173);
-  position: absolute;
-  top: 50%;
-  margin-top: -17px;
-  margin-left: 1px;
-  left: 100%;
-  z-index: 3;
+.breadcrumb .btn.btn-default {
+  border-color: transparent;
+  background-color: none;
+  padding:9px 15px 6px 15px;
+  font-size: 16px;
 }
 
-/** The Spacing **/
-.btn-breadcrumb .btn {
-  padding:6px 12px 6px 24px;
-}
-/*.btn-breadcrumb .btn:first-child {
-  padding:6px 6px 6px 10px;
-}*/
-.btn-breadcrumb .btn:last-child {
-  padding:6px 18px 6px 24px;
+.breadcrumb .btn.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+     color: white;
+     text-transform: bold;
+     background-color: #005189; 
+    border-color: #005189;
 }
 
-/** Default button **/
-.btn-breadcrumb .btn.btn-default:not(:last-child):after {
-  border-left: 10px solid #fff;
-}
-.btn-breadcrumb .btn.btn-default:not(:last-child):before {
-  border-left: 10px solid #ccc;
-}
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
-  border-left: 10px solid #ebebeb;
-}
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
-  border-left: 10px solid #adadad;
+.breadcrumb .btn.btn-default:hover, .btn-default.hover, .open > .dropdown-toggle.btn-default {
+    color: white;
+     background-color: #005189; 
+    border-color: #005189;
 }
 
-.btn-group .btn-breadcrumb > a:hover {
-  text-decoration: none;
+.breadcrumb .btn.btn-default:focus, .btn-default.focus, .open > .dropdown-toggle.btn-default {
+    color: white;
+     background-color: #005189; 
+    border-color: #005189;
 }
 
 .breadcrumb {
@@ -248,7 +215,6 @@ i{
   border-radius: 0px;
   border-bottom: .5px solid grey;
   margin-left: 1px;
-  /*height: 40px;*/
 }
 
 .shopping-cart-number {
