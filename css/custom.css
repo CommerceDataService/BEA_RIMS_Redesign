@@ -234,6 +234,7 @@ i{
   border-left: .5px solid grey;
   border-style: solid;
   padding: 0px 0px 30px 0px;
+  min-height: 530px;
 }
 
 #content .container > .row {
