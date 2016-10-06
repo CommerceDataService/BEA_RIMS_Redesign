@@ -417,9 +417,9 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
                 <div id="sidebarLeft_wrapper">
                     <div class="sidebarLeft_baseInsert">
 <!--                         <a class="logo" href="../index.cfm"></a> -->
-                <a id="Loginlnk" class="btn btn-primary nav-button btn-block" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
+                <a id="Loginlnk" class="btn btn-primary rims-blue-btn btn-block" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
                 
-                <a id="hlShoppingCart" class="btn btn-primary nav-button btn-block" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
+                <a id="hlShoppingCart" class="btn btn-primary rims-blue-btn btn-block" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
 <!--                         <div class="sidebarLeft_section">
                             <div class="menuItem"><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="home.aspx">Shopping Cart</a></div>
                             <div class="menuItem"><a href="placeorder.aspx">View Multipliers</a></div>
@@ -438,6 +438,10 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
                             <li class="menuItem">
                                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
                                 <a href="placeorder.aspx">View Multipliers</a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <a href="help.aspx">Update Account</a>
                             </li>
                             <li class="menuItem">
                                 <i class="fa fa-newspaper-o" aria-hidden="true"></i>
@@ -471,14 +475,26 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
     <div class="container col-lg-10 col-md-9 col-sm-8 col-xs-9" >
     <!--********************* Breadcrumbs *********************-->
 
-            <ul class="breadcrumb">
-                <li><a href="" class="active">Step 1: Region vs. Industry</a></li>
-                <li><a href="" >Step 2: Choose Multipliers</a></li>
-                <li><a href="" >Step 3: View Shopping Cart</a></li>
-                <li><a href="" >Step 4: Checkout</a></li>
-            </ul>
-  
-    
+        <div class="container-fluid breadcrumb">
+<!--             <div class="col-lg-10 btn-group btn-breadcrumb" style="padding-top: 8px;">
+                <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a>
+                <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a>
+                <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a>
+                <a href="#" class="btn btn-default">Step 4: Checkout</a>
+            </div> -->
+
+            <div class="col-lg-10" style="padding-top: 8px;">
+                <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                <a href="#" class="btn btn-default">Step 4: Checkout</a>
+            </div>
+
+            <div class="col-lg-2 shopping-cart-section" style="display: inline-flex;">
+                <p style="padding: 15px 20px 0 0 ;">Shopping Cart</p>
+                <div class="shopping-cart-number">0</div> <!-- This number needs to respond to the number of items in the users shopping cart -->
+            </div>
+        </div>
 
 
     <!--*********************Start of Body Content*************************-->
@@ -491,17 +507,17 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
         </div>
 
             <div class="row col-lg-2 col-md-2 col-sm-2">
-                    <a id="" class="btn btn-primary btn-block body-button">RIMS Assumptions</a>
-                   <a id="" class="btn btn-primary btn-block body-button">Things to Consider</a>
+                    <a id="" class="btn btn-primary btn-block rims-orange-btn">RIMS Assumptions</a>
+                   <a id="" class="btn btn-primary btn-block rims-orange-btn">Things to Consider</a>
             </div>
 
             <div class="row col-lg-6 col-md-6 col-sm-6">
                 <img src="images/BEA-RIMS-Region-Infographic.png" width="200" class="responsive-image">
                     <br>
-                <a href="" class="btn btn-default btn-block btn-lg order-buttons">Order by Region</a>
+                <a href="" class="btn btn-default btn-block btn-lg rims-grey-btn">Order by Region</a>
                     <br>
-                 <a href="" class="btn btn-primary body-button">View list of 369 detailed industries</a>
-                <a href="" class="btn btn-primary body-button">View list of 64 industry aggregates</a>                 
+                 <a href="" class="btn btn-primary rims-orange-btn">View list of 369 detailed industries</a>
+                <a href="" class="btn btn-primary rims-orange-btn">View list of 64 industry aggregates</a>                 
                 <i class="fa fa-question-circle" data-toggle="tooltip" aria-hidden="true"></i>
 
             </div>
@@ -510,7 +526,7 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
             <div class="row col-lg-6 col-md-6 col-sm-6 column-margin">
                     <img src="images/BEA-RIMS-Industry-Infographic.png" width="200" class="responsive-image">
                         <br>
-                    <a href="" class="btn btn-default btn-block btn-lg order-buttons">Order by Industry</a>
+                    <a href="" class="btn btn-default btn-block btn-lg rims-grey-btn">Order by Industry</a>
 
             </div>
         </div>
