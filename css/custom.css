@@ -9,6 +9,7 @@
   color: #fff;
   background-color: #005189;
   border-color: #005189;
+  border-radius: 0;
 }
 
 .rims-blue-btn:active, .rims-blue-btn.active, .open > .dropdown-toggle.rims-blue-btn {
@@ -48,6 +49,7 @@
   color: #fff;
   background-color:#DC5F13;
   border-color:#DC5F13;
+    border-radius: 0;
 }
 
 .rims-orange-btn:active, .rims-orange-btn.active, .open > .dropdown-toggle.rims-orange-btn {

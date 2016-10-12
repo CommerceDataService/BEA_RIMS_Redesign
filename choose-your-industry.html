@@ -1,0 +1,1236 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<head>
+<meta http-equiv=content-type content="text/html; charset=iso-8859-1">
+<meta name="DC.title" content="Bureau of Economic Analysis" />
+<meta name="DC.creator" content="US Department of Commerce, BEA, Bureau of Economic Analysis" />
+<meta name="DC.language" scheme="DCTERMS.RFC4646" content="EN-US" />
+
+<link rel="P3Pv1" href="/w3c/p3p.xml">
+<link rel="alternate" type="application/rss+xml" title="BEA - Current Release (RSS)" href="http://www.bea.gov/rss/rss.xml">
+
+<meta name="apple-mobile-web-app-title" content="BEA">
+<meta name="application-name" content="BEA">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=9BBR3Ay64f">
+<meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=9BBR3Ay64f">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=9BBR3Ay64f">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=9BBR3Ay64f">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=9BBR3Ay64f">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=9BBR3Ay64f">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=9BBR3Ay64f">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=9BBR3Ay64f">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=9BBR3Ay64f">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=9BBR3Ay64f">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=9BBR3Ay64f" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-194x194.png?v=9BBR3Ay64f" sizes="194x194">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=9BBR3Ay64f" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=9BBR3Ay64f" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=9BBR3Ay64f" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=9BBR3Ay64f">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=9BBR3Ay64f" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v=9BBR3Ay64f">
+
+<!--CSS Frameworks -->
+<link rel="stylesheet" type="text/css" href="css/reset_global.css" >
+<link rel="stylesheet" type="text/css" href="framework/jquery-ui-1.11.4/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="framework/bootstrap-3.3.6-dist/css/bootstrap.css">
+
+<link rel="stylesheet" type="text/css" href="css/jquery-override.css">
+<link rel="stylesheet" type="text/css" href="css/bea_refresh-bootstrap-fix.css">
+<link rel="stylesheet" type="text/css" href="css/bea_refresh.css">
+
+<link rel="stylesheet" type="text/css" href="scripts/fancybox2/jquery.fancybox.css">
+
+
+<!--Javascript Frameworks -->
+<script src="framework/jquery-1.12.3.min.js"></script>
+<script src="framework/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+<script src="framework/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+<!--Javascript - Fancybox -->
+<script type="text/javascript" src="scripts/fancybox2/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="scripts/fancybox2/jquery.fancybox-media.js"></script>
+
+<!-- Radhika Custom Styles -->
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+<script type="text/javascript">
+  //$(document).ready(function() {
+//    $(".fancybox").fancybox({
+//      helpers : {
+//        media: true
+//      }
+//    });
+//  });
+  function MM_jumpMenu(targ,selObj,restore){ //v3.0
+    eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+    if (restore) selObj.selectedIndex=0;
+  }
+  
+  function MM_findObj(n, d) { //v4.0
+    var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+    if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+    for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+    if(!x && document.getElementById) x=document.getElementById(n); return x;
+  }
+  
+  function MM_jumpMenuGo(selName,targ,restore){ //v3.0
+    var selObj = MM_findObj(selName); if (selObj) MM_jumpMenu(targ,selObj,restore);
+  }
+</script>
+
+
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+    </script>
+    <script src="scripts/jquery.resizeimagetoparent.min.js"></script>
+
+<script>
+    var logindialogpanel, infodialogpanel, form, redirectto, IsLoggedIn, IsAuthenticated, LoginRequired
+
+    $(function () {
+        
+        IsLoggedIn = false;
+        IsAuthenticated = false;
+        LoginRequired = false;
+
+        // From http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state-%28type=email%29
+        email = $("#TextBoxUserName"),
+        emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+        password = $("#TextBoxPassword"),
+        allFields = $([]).add(email).add(password),
+        tips = $(".validateTips");
+
+        //$(".CustomPageTitle").html("<strong>" + document.title + "</strong>");
+        $(".CustomPageTitle").html(document.title);      
+
+        function updateTips(t) {
+            tips
+              .text(t);
+        }
+
+        function checkLength(o, n, min, max) {
+            if (o.val().length > max || o.val().length < min) {
+                o.addClass("ui-state-error");
+                updateTips("Length of " + n + " must be between " +
+                  min + " and " + max + ".");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function checkRegexp(o, regexp, n) {
+            if (!(regexp.test(o.val()))) {
+                o.addClass("ui-state-error");
+                updateTips(n);
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function validateLogin() {
+            var valid = true;
+            allFields.removeClass("ui-state-error");
+            valid = valid && checkLength(email, "Email address", 3, 100);
+            valid = valid && checkRegexp(email, emailRegex, "Please enter a valid email address");
+            valid = valid && checkLength(password, "Password", 6, 15);
+            valid = valid && checkRegexp(password, /^([0-9a-zA-Z])+$/, "Password field only allows letters and digits");
+            valid = valid && checkRegexp(password, /([\d])/, "Password field must contain at least one digit"); //(?=.*[\d])
+            valid = valid && checkRegexp(password, /([A-Za-z])/, "Password field must contain at least one letter");
+            return valid;
+        }
+
+        logindialogpanel = $("#LoginPanel").dialog({
+            autoOpen: false,
+            width: 500,
+            modal: true,
+            closeOnEscape: true,
+            draggable: true,
+            resizable: true,
+            title: "Sign In",
+            overlay: "background-color: black; opacity: 90",
+            buttons: {
+                Cancel: function () { $(this).dialog('close'); },
+                "Sign In": function () {
+                    if (validateLogin()) {
+                        //$('#rimsform').submit();
+                        ServerLogin($("#TextBoxUserName").val() + "\t" + $("#TextBoxPassword").val());
+                    }
+                }
+            },
+            close: function () {
+                allFields.removeClass("ui-state-error");
+                updateTips("Please enter your RIMS account information.");
+            }
+        });
+
+        infodialogpanel = $("#infodialog").dialog({
+            autoOpen: false,
+            title: 'Info',
+            closeOnEscape: true,
+            draggable: true,
+            resizable: true,
+            width : 800,
+            height : $(window).height()-90, 
+            modal : true
+        });
+
+        logindialogpanel.parent().appendTo("form#rimsform");
+
+        $("#Loginlnk").on("click", function () {
+            logindialogpanel.dialog("open");
+            $('#LoginPanel input[type=submit]').addClass('btn button-submit');
+        });
+
+        $('#LoginPanel').keypress(function (e) {
+            var key = e.which;
+            if(key == 13)  // the enter key code
+            {
+                if (validateLogin()) {
+                    ServerLogin($("#TextBoxUserName").val() + "\t" + $("#TextBoxPassword").val());
+                }
+                return false;  
+            }
+        }); 
+
+        $(".linebreaktooltip").attr("title", function(i, origValue){
+            return origValue.replace(/~/g,"\n"); 
+        });
+
+        
+
+     });
+
+    //*******************
+    function invokeinfodialog(infocontenturl, dialogtitle, showmodal, width, height) {
+        infodialogpanel = $("#infodialog").dialog();
+        if  (infodialogpanel.dialog( "isOpen" )) infodialogpanel.dialog("close");
+
+        width = typeof width !== 'undefined' ? width : 800;
+        height = typeof height !== 'undefined' ? height : $(window).height()-90;
+
+        infodialogpanel.dialog("option", "height", height);
+        infodialogpanel.dialog("option", "width", width);
+
+        infodialogpanel.dialog("option", "title", dialogtitle);
+
+        if (showmodal == true){
+            infodialogpanel.dialog("option", "modal", true );
+        }
+        else{
+            infodialogpanel.dialog("option", "modal", false );
+        }
+
+        infodialogpanel.load(infocontenturl, function() {
+            infodialogpanel.dialog("open");
+            updatestateimage();
+            infodialogpanel.scrollTop();
+        });
+
+    }
+
+    function InvokeLogin(redirecttolink) {
+        redirectto = redirecttolink;
+        logindialogpanel = $("#LoginPanel").dialog();
+        if  (logindialogpanel.dialog( "isOpen" )) logindialogpanel.dialog("close");
+
+        logindialogpanel.dialog("open");
+    }
+
+    function ServerLogin(sValue) {
+        ServerLoginSubmit(sValue, "");
+    }
+
+    function ServerLoginCallback(rValue) {
+        //if (rValue.indexOf("Login Succeeded") == 0) {
+        var LoginReturn = JSON && JSON.parse(rValue) || $.parseJSON(rValue);
+        var tips = $(".validateTips");
+
+        if (LoginReturn.Status == "Login Succeeded") {
+            tips.removeClass("ui-state-error");
+            $("#Loginlnk").text("Welcome, " + LoginReturn.CustomerFirstName + ". (Sign Out)");
+            $("#Loginlnk").attr("href", "signout.aspx");
+            $("#hlShoppingCart").attr("href","basket.aspx");
+            $("#hlViewOrder").attr("href","vieworder.aspx");
+            $("#hlUpdateAccount").attr("href","myaccount.aspx");
+
+            if (redirectto) {
+                window.location = redirectto;
+                //window.location.reload(); //update the login controls
+                return;
+            }
+            else
+            {
+
+                if (window.location.href.indexOf("signout.aspx") >= 0) {
+                    window.location = "home.aspx";
+                    return;
+                }
+
+                logindialogpanel.dialog("close")
+                return;
+            }
+
+
+        }
+        tips.text(LoginReturn.Status ? LoginReturn.Status : "Login Failed");
+        tips.addClass("ui-state-error");
+    }
+
+    function updatestateimage() {
+        $(".ui-dialog-content").each(function(){
+            var ratio_cont = jQuery(this).width()/jQuery(this).height();
+            var $img = jQuery(this).find("img");
+            var ratio_img = $img.width()/$img.height();
+            if (ratio_cont > ratio_img)
+            {
+                $img.css({"width": "100%", "height": "auto"});
+            }
+            else if (ratio_cont < ratio_img)
+            {
+                $img.css({"width": "auto", "height": "100%"});
+            }
+        }); //missing )
+    };
+
+    //*******************
+</script>
+
+
+    <title>RIMS II Online Order and Delivery System</title>
+ 
+
+</head><body class="regional">
+<!-- START:Header --> 
+<div id="header">
+  <form class="search-form" id="search-form" action="http://search.bea.gov/search" method="get" accept-charset="UTF-8">
+    <div class="search-wrapper">
+      <div class="search-textBox">
+        <input name="query" class="search-input-text" id="search-textfield" type="text" autocomplete="off">
+      </div>
+      <div class="search-submitButton">
+        <input name="commit" class="search-input-button" id="search-submit" type="submit" value="Go">
+      </div>
+    </div>
+    <input name="utf8" type="hidden" value="Ã¢Å“"">
+    <input name="affiliate" id="affiliate" type="hidden" value="u.s.bureauofeconomicanalysis">
+  </form>
+  <a class="bea-link" href="/index.htm"></a> <a class="doc-link" href="http://www.commerce.gov"></a>
+</div>
+<cfinclude template="/_includes/header_tabs_main.ssi">
+  <div id="topTabs">
+    <ul>
+      <li id="home"><a href="/index.htm"><span>Home</span></a></li>
+      <li id="national"><a href="/national/index.htm"><span>National</span></a></li>
+      <li id="international"><a href="/international/index.htm"><span>International</span></a></li>
+      <li id="regional"><a href="/regional/index.htm"><span>Regional</span></a></li>
+      <li id="industry"><a href="/industry/index.htm"><span>Industry</span></a></li>
+      <li id="interactive"><a href="/itable/"><span>Interactive Data</span></a></li>
+      <li id="about" class="float-tab"><a href="/about/index.htm"><span>About BEA</span></a></li>
+      <li id="faqs" class="float-tab"><a href="/faq/index.cfm"><span>FAQs</span></a></li>
+      <li id="contact" class="float-tab"><a href="/contacts/search.htm"><span>Contact Us</span></a></li>
+    </ul>
+  </div>
+
+
+<nav  id="bottomTabs">
+  <ul>
+    <li id="aboutRegional"><a href="/regional/about.cfm">About Regional</a></li>
+    <li id="method"><a href="/regional/methods.cfm">Methodologies</a></li>
+    <li id="articles"><a href="/regional/articles.cfm">Articles</a></li>
+    <li id="schedule"><a href="/newsreleases/news_release_sort_regional.htm">Release Schedule</a></li>
+    <li id="contacts"><a href="/contacts/email.htm">Staff Contacts</a></li>
+    <li id="subscription"><a href="/_subscribe/">Email Subscriptions</a></li>
+  </ul>
+</nav>
+
+<div class="clear"></div><form name="rimsform" method="post" action="./home.aspx" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ButtonLogin')" id="rimsform">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="CJBLjSqObIfR+waZbGxxgJdMhFtCHU8Y8vp/VCuqnkmkM9+YWqnJGpVVM7eDQKFLYgsdC4lY7QypuBAczLR/z1si3TIe/J5F9ZQYeOW3+jlLklTv7+wBXRHvUZ/kwRc+uz1KDikHbMm2VOdeRR1bVbCmJWWVEZgDkpLUfFqrNDoS9mv2x5RvTEs0lWn0gCOJdLmvo7KJwZxfPYDSr5uCAlCQYp+WXq1KW+jA7MaXnNXt2FWcZ0SHbWr6uAacBiXZR5Zq3qgwZ+dqWFIuNtyOMKGx2whuxT+XLOXVdq6GXFSPpILv1uMQe3sniJSnbve2iKqnbqicU8YCJU0viMgNLQZkcc+YN8u/jvMgy2Dem2bDfMrmxR+G/h6R2S+23FweCDgVhg==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['rimsform'];
+if (!theForm) {
+    theForm = document.rimsform;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/regional/rims/rimsii/WebResource.axd?d=_tydoX_tT4-Z2WfxPp7Y_5VoOcrd8kJCnUKxtA0Bk7MzBOf9SpTRKGuMoaTe15cCcClA61hhKemJ67iL0&amp;t=635803038500000000" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerLoginCallback,context,null,false);}//]]>
+</script>
+
+<script src="/regional/rims/rimsii/WebResource.axd?d=dagktgv7f8XSRlNyRxdFERfiMEjZlyDzxbmDHgIdwReBTWLDp9v3UingL7nWu8M8VfVy2V3fSg1Hkkum0&amp;t=635803038500000000" type="text/javascript"></script>
+<div>
+
+  <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="87F8FA08" />
+  <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="qb78jI6gpI0QkkCA/YsRrS5DQsuYC5owqPXh2PdFSB3yY8afg45qg0yWdkcifuL6AbKih853dBwEXf3wRUY56ALZ96tuJmRJphGbdPUIK2y9iFyDZ9f/dVFKltiY//BpCeikmgRHfxHJB9h89eN+8fsiLgA/MpKAFlWIrCl69MKIj4pX6DwDe8uOkjB0Nkdtku4a7C8HGtm8bLvIpOApILtJzZN42IkcjgAe6w==" />
+</div>
+        <!--*********************Start of Login controls*************************-->
+        <div id="content">
+<!--             <h1 class="CustomPageTitle">RIMS II Online Order and Delivery System</h1>
+            <div id="LabelShowSessionMessage"></div>&nbsp;
+            <div class="rimsloginheader btn-group">
+                <span id="lblName"></span>&nbsp;
+                
+                <a id="Loginlnk" class="btn btn-default" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
+                
+                <a id="hlShoppingCart" class="btn btn-default" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Shopping Cart</a>
+                <span id="lblitems"></span>
+                <hr />
+            </div> -->
+            <!--*********************End of Login controls*************************-->
+
+<!--*********************START OF NEW MENU*************************-->
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3" style="padding: 0">
+                <div id="sidebarLeft_wrapper">
+                    <div class="sidebarLeft_baseInsert">
+<!--                         <a class="logo" href="../index.cfm"></a> -->
+                <a id="Loginlnk" class="btn btn-primary rims-blue-btn btn-block" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
+                
+                <a id="hlShoppingCart" class="btn btn-primary rims-blue-btn btn-block" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
+<!--                         <div class="sidebarLeft_section">
+                            <div class="menuItem"><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="home.aspx">Shopping Cart</a></div>
+                            <div class="menuItem"><a href="placeorder.aspx">View Multipliers</a></div>
+                            <div class="menuItem"> <a id="hlViewOrder" href="javascript:InvokeLogin(&#39;vieworder.aspx&#39;);">Case Studies</a></div>
+                            <div class="menuItem"> <a id="hlUpdateAccount" href="javascript:InvokeLogin(&#39;myaccount.aspx&#39;);">Sample Tables</a></div>
+                            <div class="menuItem"><a href="sampleorderdetail.aspx">Industry Lists</a></div>
+                            <div class="menuItem"><a href="industrylist.aspx?List=3">About RIMS</a></div>
+                            <div class="menuItem"><a href="/regional/pdf/rims/rimsii_user_guide.pdf" target="_blank">FAQ's</span></a></div>
+                            <div class="menuItem"><a href="help.aspx">Contact Us</a></div>
+                        </div> -->
+                        <ul class="nav navbar-stacked "> <!--Removed BEA class sidebarLeft_section -->
+                            <li class="menuItem">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <a href="home.aspx">Shopping Cart</a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                <a href="placeorder.aspx">View Multipliers</a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <a href="help.aspx">Update Account</a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                <a id="hlViewOrder" href="javascript:InvokeLogin(&#39;vieworder.aspx&#39;);">Case Studies</a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <a id="hlUpdateAccount" href="javascript:InvokeLogin(&#39;myaccount.aspx&#39;);">Sample Tables</a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-list" aria-hidden="true"></i><a href="sampleorderdetail.aspx">Industry Lists</a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <a href="industrylist.aspx?List=3">About RIMS</a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                <a href="/regional/pdf/rims/rimsii_user_guide.pdf" target="_blank">FAQ's</span></a>
+                            </li>
+                            <li class="menuItem">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                <a href="help.aspx">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--*********************END OF NEW MENU*************************-->
+
+    <div class="container col-lg-10 col-md-9 col-sm-8 col-xs-9" >
+    <!--********************* Breadcrumbs *********************-->
+
+        <div class="container-fluid breadcrumb">
+<!--             <div class="col-lg-10 btn-group btn-breadcrumb" style="padding-top: 8px;">
+                <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a>
+                <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a>
+                <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a>
+                <a href="#" class="btn btn-default">Step 4: Checkout</a>
+            </div> -->
+
+            <div class="col-lg-10" style="padding-top: 8px;">
+                <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                <a href="#" class="btn btn-default">Step 4: Checkout</a>
+            </div>
+
+            <div class="col-lg-2 shopping-cart-section" style="display: inline-flex;">
+                <p style="padding: 15px 20px 0 0 ;">Shopping Cart</p>
+                <div class="shopping-cart-number">0</div> <!-- This number needs to respond to the number of items in the users shopping cart -->
+            </div>
+        </div>
+
+
+    <!--*********************Start of Body Content*************************-->
+        <div class="container-fluid">
+<!--         <div class="row col-lg-10 col-md-10 col-sm-10" id="ordering-heading">
+            <h3 class="landing-page-heading"><strong>Step 2: Select Your Industry</strong></h3>     
+
+            <p class="landing-page-p">Hold down Ctrl to select multiple industries.</p>
+            
+        </div> -->
+
+
+           <table border="0" cellpadding="0" cellspacing="0" style="padding-right: 10px">
+    <tr>
+    <td>
+                        
+                        <b style="font-size:115%">Step 2: Select Your Industry</b>&nbsp;<br />
+                        </strong><span style="font-size: 8pt">(Hold down Ctrl to
+                            select multiple industries)&nbsp;</span>
+                            <br />
+                            <br />
+                            <table border="0" cellpadding="0"
+                                cellspacing="0" style="width: 730px; height: 289px;">
+                                
+                                <tr>
+                                    <td style="height: 13px; width: 322px;">
+                                        <label for="AggBox">Aggregate Industries</label></td>
+                                    <td style="width: 17px; height: 13px">
+                                    </td>
+                                    <td style="height: 13px">
+                                        <label for="SelAggBox">Selected Aggregate Industry(s)</label></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 322px">
+                                        <select size="4" name="ctl00$RIMSPlaceHolder$AggBox" multiple="multiple" id="RIMSPlaceHolder_AggBox" style="height:160px;width:346px;">
+    <option value="1">1 Farms</option>
+    <option value="2">2 Forestry, fishing, and related activities</option>
+    <option value="3">3 Oil and gas extraction</option>
+    <option value="4">4 Mining, except oil and gas</option>
+    <option value="5">5 Support activities for mining</option>
+    <option value="6">6 Utilities*</option>
+    <option value="7">7 Construction</option>
+    <option value="8">8 Wood product manufacturing</option>
+    <option value="9">9 Nonmetallic mineral product manufacturing</option>
+    <option value="10">10 Primary metal manufacturing</option>
+    <option value="11">11 Fabricated metal product manufacturing</option>
+    <option value="12">12 Machinery manufacturing</option>
+    <option value="13">13 Computer and electronic product manufacturing</option>
+    <option value="14">14 Electrical equipment and appliance manufacturing</option>
+    <option value="15">15 Motor vehicles, bodies and trailers, and parts manufacturing</option>
+    <option value="16">16 Other transportation equipment manufacturing</option>
+    <option value="17">17 Furniture and related product manufacturing</option>
+    <option value="18">18 Miscellaneous manufacturing</option>
+    <option value="19">19 Food and beverage and tobacco product manufacturing</option>
+    <option value="20">20 Textile mills and textile product mills</option>
+    <option value="21">21 Apparel and leather and allied product manufacturing</option>
+    <option value="22">22 Paper manufacturing</option>
+    <option value="23">23 Printing and related support activities</option>
+    <option value="24">24 Petroleum and coal products manufacturing</option>
+    <option value="25">25 Chemical manufacturing</option>
+    <option value="26">26 Plastics and rubber products manufacturing</option>
+    <option value="27">27 Wholesale trade</option>
+    <option value="28">28 Motor vehicle and parts dealers</option>
+    <option value="29">29 Food and beverage stores</option>
+    <option value="30">30 General merchandise stores</option>
+    <option value="31">31 Other retail</option>
+    <option value="32">32 Air transportation</option>
+    <option value="33">33 Rail transportation</option>
+    <option value="34">34 Water transportation</option>
+    <option value="35">35 Truck transportation</option>
+    <option value="36">36 Transit and ground passenger transportation*</option>
+    <option value="37">37 Pipeline transportation</option>
+    <option value="38">38 Other transportation and support activities*</option>
+    <option value="39">39 Warehousing and storage</option>
+    <option value="40">40 Publishing industries, except internet (includes software)</option>
+    <option value="41">41 Motion picture and sound recording industries</option>
+    <option value="42">42 Broadcasting and telecommunications</option>
+    <option value="43">43 Data processing, internet publishing, and other information services</option>
+    <option value="44">44 Federal Reserve banks, credit intermediation, and related activities</option>
+    <option value="45">45 Securities, commodity contracts, and investments</option>
+    <option value="46">46 Insurance carriers and related activities</option>
+    <option value="47">47 Funds, trusts, and other financial vehicles</option>
+    <option value="48">48 Real estate</option>
+    <option value="49">49 Rental and leasing services and lessors of intangible assets</option>
+    <option value="50">50 Professional, scientific, and technical services</option>
+    <option value="51">51 Management of companies and enterprises</option>
+    <option value="52">52 Administrative and support services</option>
+    <option value="53">53 Waste management and remediation services</option>
+    <option value="54">54 Educational services</option>
+    <option value="55">55 Ambulatory health care services</option>
+    <option value="56">56 Hospitals</option>
+    <option value="57">57 Nursing and residential care facilities</option>
+    <option value="58">58 Social assistance</option>
+    <option value="59">59 Performing arts, spectator sports, museums, and related activities</option>
+    <option value="60">60 Amusements, gambling, and recreation industries</option>
+    <option value="61">61 Accommodation</option>
+    <option value="62">62 Food services and drinking places</option>
+    <option value="63">63 Other services*</option>
+    <option value="64">64 Households</option>
+
+</select>
+                                    <input class="btn rims-orange-btn" type="submit" name="ctl00$RIMSPlaceHolder$btnAddAgg" value="Select" id="RIMSPlaceHolder_btnAddAgg" title="Select" /></td>
+                            <td style="width: 17px" valign="middle" class="buttonselect" align="center" ></td>
+                                    <td>
+                                        <select size="4" name="ctl00$RIMSPlaceHolder$SelAggBox" multiple="multiple" id="RIMSPlaceHolder_SelAggBox" style="height:160px;width:346px;">
+
+</select>
+                                    <input class="btn rims-orange-btn" type="submit" name="ctl00$RIMSPlaceHolder$btnRemoveAgg" value="Remove" id="RIMSPlaceHolder_btnRemoveAgg" title="Remove" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 322px; height: 9px;">
+                                    </td>
+                                    <td style="width: 17px; height: 9px;">
+                                    </td>
+                                    <td style="height: 9px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 322px; height: 9px">
+                                    </td>
+                                    <td style="width: 17px; height: 9px">
+                                    </td>
+                                    <td style="height: 9px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 322px; height: 9px">
+                                    </td>
+                                    <td style="width: 17px; height: 9px">
+                                    </td>
+                                    <td style="height: 9px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 322px; height: 13px;">
+                                        <label for="DetailBox">Detailed Industries</label></td>
+                                    <td style="width: 17px; height: 13px;">
+                                    </td>
+                                    <td style="height: 13px">
+                                        <label for="SelDetailBox">Selected Detailed Industry(s)</label></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 322px">
+                                        <select size="4" name="ctl00$RIMSPlaceHolder$DetailBox" multiple="multiple" id="RIMSPlaceHolder_DetailBox" style="height:160px;width:346px;">
+    <option value="1">1111C0 Oilseed and grain farming</option>
+    <option value="2">111200 Vegetable and melon farming</option>
+    <option value="3">111300 Fruit and tree nut farming</option>
+    <option value="4">111400 Greenhouse, nursery, and floriculture production</option>
+    <option value="5">111900 Other crop farming</option>
+    <option value="6">1121A0 Beef cattle ranching and farming, including feedlots and dual-purpose ranching and farming</option>
+    <option value="7">112120 Dairy cattle and milk production</option>
+    <option value="8">112A00 Animal production, except cattle and poultry and eggs</option>
+    <option value="9">112300 Poultry and egg production</option>
+    <option value="10">113000 Forestry and logging</option>
+    <option value="11">114000 Fishing, hunting and trapping</option>
+    <option value="12">115000 Support activities for agriculture and forestry</option>
+    <option value="13">211000 Oil and gas extraction</option>
+    <option value="14">212100 Coal mining</option>
+    <option value="15">2122A0 Iron, gold, silver, and other metal ore mining</option>
+    <option value="16">212230 Copper, nickel, lead, and zinc mining</option>
+    <option value="17">212310 Stone mining and quarrying</option>
+    <option value="18">2123A0 Other nonmetallic mineral mining and quarrying</option>
+    <option value="19">213111 Drilling oil and gas wells</option>
+    <option value="20">21311A Other support activities for mining</option>
+    <option value="21">2211A0 Electric power generation, transmission, and distribution*</option>
+    <option value="22">221200 Natural gas distribution</option>
+    <option value="23">221300 Water, sewage and other systems</option>
+    <option value="24">23030A Maintenance and repair</option>
+    <option value="25">2332C0 Nonresidential structures</option>
+    <option value="26">233293 Highways and streets</option>
+    <option value="27">2334B0 Residential structures</option>
+    <option value="28">321100 Sawmills and wood preservation</option>
+    <option value="29">321200 Veneer, plywood, and engineered wood product manufacturing</option>
+    <option value="30">321910 Millwork</option>
+    <option value="31">3219A0 All other wood product manufacturing</option>
+    <option value="32">327100 Clay product and refractory manufacturing</option>
+    <option value="33">327200 Glass and glass product manufacturing</option>
+    <option value="34">327310 Cement manufacturing</option>
+    <option value="35">327320 Ready-mix concrete manufacturing</option>
+    <option value="36">327330 Concrete pipe, brick, and block manufacturing</option>
+    <option value="37">327390 Other concrete product manufacturing</option>
+    <option value="38">327400 Lime and gypsum product manufacturing</option>
+    <option value="39">327910 Abrasive product manufacturing</option>
+    <option value="40">327991 Cut stone and stone product manufacturing</option>
+    <option value="41">327992 Ground or treated mineral and earth manufacturing</option>
+    <option value="42">327993 Mineral wool manufacturing</option>
+    <option value="43">327999 Miscellaneous nonmetallic mineral products</option>
+    <option value="44">331110 Iron and steel mills and ferroalloy manufacturing</option>
+    <option value="45">331200 Steel product manufacturing from purchased steel</option>
+    <option value="46">33131A Alumina refining and primary aluminum production</option>
+    <option value="47">331314 Secondary smelting and alloying of aluminum</option>
+    <option value="48">33131B Aluminum product manufacturing from purchased aluminum</option>
+    <option value="49">33141A Primary smelting and refining of nonferrous metal (except aluminum)</option>
+    <option value="50">331420 Copper rolling, drawing, extruding, and alloying</option>
+    <option value="51">331490 Nonferrous metal (except copper and aluminum) rolling, drawing, extruding, and alloying</option>
+    <option value="52">331510 Ferrous metal foundries</option>
+    <option value="53">331520 Nonferrous metal foundries</option>
+    <option value="54">33211A All other forging, stamping, and sintering</option>
+    <option value="55">332114 Custom roll forming</option>
+    <option value="56">33211B Crown and closure manufacturing and metal stamping</option>
+    <option value="57">332200 Cutlery and handtool manufacturing</option>
+    <option value="58">332310 Plate work and fabricated structural product manufacturing</option>
+    <option value="59">332320 Ornamental and architectural metal products manufacturing</option>
+    <option value="60">332410 Power boiler and heat exchanger manufacturing</option>
+    <option value="61">332420 Metal tank (heavy gauge) manufacturing</option>
+    <option value="62">332430 Metal can, box, and other metal container (light gauge) manufacturing</option>
+    <option value="63">332500 Hardware manufacturing</option>
+    <option value="64">332600 Spring and wire product manufacturing</option>
+    <option value="65">332710 Machine shops</option>
+    <option value="66">332720 Turned product and screw, nut, and bolt manufacturing</option>
+    <option value="67">332800 Coating, engraving, heat treating and allied activities</option>
+    <option value="68">33291A Valve and fitting (except plumbing) manufacturing</option>
+    <option value="69">332913 Plumbing fixture fitting and trim manufacturing</option>
+    <option value="70">332991 Ball and roller bearing manufacturing</option>
+    <option value="71">33299A Ammunition, arms, ordnance, and accessories manufacturing</option>
+    <option value="72">332996 Fabricated pipe and pipe fitting manufacturing</option>
+    <option value="73">33299B Other fabricated metal manufacturing</option>
+    <option value="74">333111 Farm machinery and equipment manufacturing</option>
+    <option value="75">333112 Lawn and garden equipment manufacturing</option>
+    <option value="76">333120 Construction machinery manufacturing</option>
+    <option value="77">333130 Mining and oil and gas field machinery manufacturing</option>
+    <option value="78">3332A0 Industrial machinery (except semiconductor machinery) manufacturing</option>
+    <option value="79">333295 Semiconductor machinery manufacturing</option>
+    <option value="80">33331B All other commercial and service industry machinery manufacturing</option>
+    <option value="81">333314 Optical instrument and lens manufacturing</option>
+    <option value="82">333315 Photographic and photocopying equipment manufacturing</option>
+    <option value="83">33341A Air purification and ventilation equipment manufacturing</option>
+    <option value="84">333414 Heating equipment (except warm air furnaces) manufacturing</option>
+    <option value="85">333415 Air conditioning, refrigeration, and warm air heating equipment manufacturing</option>
+    <option value="86">333511 Industrial mold manufacturing</option>
+    <option value="87">33351A Metal cutting and forming machine tool manufacturing</option>
+    <option value="88">333514 Special tool, die, jig, and fixture manufacturing</option>
+    <option value="89">33351B Cutting and machine tool accessory, rolling mill, and other metalworking machinery manufacturing</option>
+    <option value="90">333611 Turbine and turbine generator set units manufacturing</option>
+    <option value="91">333612 Speed changer, industrial high-speed drive, and gear manufacturing</option>
+    <option value="92">333613 Mechanical power transmission equipment manufacturing</option>
+    <option value="93">333618 Other engine equipment manufacturing</option>
+    <option value="94">33391A Pump and pumping equipment manufacturing</option>
+    <option value="95">333912 Air and gas compressor manufacturing</option>
+    <option value="96">333920 Material handling equipment manufacturing</option>
+    <option value="97">333991 Power-driven handtool manufacturing</option>
+    <option value="98">33399A Other general purpose machinery manufacturing</option>
+    <option value="99">333993 Packaging machinery manufacturing</option>
+    <option value="100">333994 Industrial process furnace and oven manufacturing</option>
+    <option value="101">33399B Fluid power process machinery</option>
+    <option value="102">334111 Electronic computer manufacturing</option>
+    <option value="103">334112 Computer storage device manufacturing</option>
+    <option value="104">33411A Computer terminals and other computer peripheral equipment manufacturing</option>
+    <option value="105">334210 Telephone apparatus manufacturing</option>
+    <option value="106">334220 Broadcast and wireless communications equipment</option>
+    <option value="107">334290 Other communications equipment manufacturing</option>
+    <option value="108">334300 Audio and video equipment manufacturing</option>
+    <option value="109">33441A Other electronic component manufacturing</option>
+    <option value="110">334413 Semiconductor and related device manufacturing</option>
+    <option value="111">334418 Printed circuit assembly (electronic assembly) manufacturing</option>
+    <option value="112">334510 Electromedical and electrotherapeutic apparatus manufacturing</option>
+    <option value="113">334511 Search, detection, and navigation instruments manufacturing</option>
+    <option value="114">334512 Automatic environmental control manufacturing</option>
+    <option value="115">334513 Industrial process variable instruments manufacturing</option>
+    <option value="116">334514 Totalizing fluid meter and counting device manufacturing</option>
+    <option value="117">334515 Electricity and signal testing instruments manufacturing</option>
+    <option value="118">334516 Analytical laboratory instrument manufacturing</option>
+    <option value="119">334517 Irradiation apparatus manufacturing</option>
+    <option value="120">33451A Watch, clock, and other measuring and controlling device manufacturing</option>
+    <option value="121">334610 Manufacturing and reproducing magnetic and optical media</option>
+    <option value="122">335110 Electric lamp bulb and part manufacturing</option>
+    <option value="123">335120 Lighting fixture manufacturing</option>
+    <option value="124">335210 Small electrical appliance manufacturing</option>
+    <option value="125">335221 Household cooking appliance manufacturing</option>
+    <option value="126">335222 Household refrigerator and home freezer manufacturing</option>
+    <option value="127">335224 Household laundry equipment manufacturing</option>
+    <option value="128">335228 Other major household appliance manufacturing</option>
+    <option value="129">335311 Power, distribution, and specialty transformer manufacturing</option>
+    <option value="130">335312 Motor and generator manufacturing</option>
+    <option value="131">335313 Switchgear and switchboard apparatus manufacturing</option>
+    <option value="132">335314 Relay and industrial control manufacturing</option>
+    <option value="133">335911 Storage battery manufacturing</option>
+    <option value="134">335912 Primary battery manufacturing</option>
+    <option value="135">335920 Communication and energy wire and cable manufacturing</option>
+    <option value="136">335930 Wiring device manufacturing</option>
+    <option value="137">335991 Carbon and graphite product manufacturing</option>
+    <option value="138">335999 All other miscellaneous electrical equipment and component manufacturing</option>
+    <option value="139">336111 Automobile manufacturing</option>
+    <option value="140">336112 Light truck and utility vehicle manufacturing</option>
+    <option value="141">336120 Heavy duty truck manufacturing</option>
+    <option value="142">336211 Motor vehicle body manufacturing</option>
+    <option value="143">336212 Truck trailer manufacturing</option>
+    <option value="144">336213 Motor home manufacturing</option>
+    <option value="145">336214 Travel trailer and camper manufacturing</option>
+    <option value="146">336310 Motor vehicle gasoline engine and engine parts manufacturing</option>
+    <option value="147">336320 Motor vehicle electrical and electronic equipment manufacturing</option>
+    <option value="148">3363A0 Motor vehicle steering, suspension component (except spring), and brake systems manufacturing</option>
+    <option value="149">336350 Motor vehicle transmission and power train parts manufacturing</option>
+    <option value="150">336360 Motor vehicle seating and interior trim manufacturing</option>
+    <option value="151">336370 Motor vehicle metal stamping</option>
+    <option value="152">336390 Other motor vehicle parts manufacturing</option>
+    <option value="153">336411 Aircraft manufacturing</option>
+    <option value="154">336412 Aircraft engine and engine parts manufacturing</option>
+    <option value="155">336413 Other aircraft parts and auxiliary equipment manufacturing</option>
+    <option value="156">336414 Guided missile and space vehicle manufacturing</option>
+    <option value="157">33641A Propulsion units and parts for space vehicles and guided missiles</option>
+    <option value="158">336500 Railroad rolling stock manufacturing</option>
+    <option value="159">336611 Ship building and repairing</option>
+    <option value="160">336612 Boat building</option>
+    <option value="161">336991 Motorcycle, bicycle, and parts manufacturing</option>
+    <option value="162">336992 Military armored vehicle, tank, and tank component manufacturing</option>
+    <option value="163">336999 All other transportation equipment manufacturing</option>
+    <option value="164">337110 Wood kitchen cabinet and countertop manufacturing</option>
+    <option value="165">337121 Upholstered household furniture manufacturing</option>
+    <option value="166">337122 Nonupholstered wood household furniture manufacturing</option>
+    <option value="167">33712A Other household nonupholstered furniture</option>
+    <option value="168">337127 Institutional furniture manufacturing</option>
+    <option value="169">33721A Office furniture and custom architectural woodwork and millwork manufacturing</option>
+    <option value="170">337215 Showcase, partition, shelving, and locker manufacturing</option>
+    <option value="171">337900 Other furniture related product manufacturing</option>
+    <option value="172">339112 Surgical and medical instrument manufacturing</option>
+    <option value="173">339113 Surgical appliance and supplies manufacturing</option>
+    <option value="174">339114 Dental equipment and supplies manufacturing</option>
+    <option value="175">339115 Ophthalmic goods manufacturing</option>
+    <option value="176">339116 Dental laboratories</option>
+    <option value="177">339910 Jewelry and silverware manufacturing</option>
+    <option value="178">339920 Sporting and athletic goods manufacturing</option>
+    <option value="179">339930 Doll, toy, and game manufacturing</option>
+    <option value="180">339940 Office supplies (except paper) manufacturing</option>
+    <option value="181">339950 Sign manufacturing</option>
+    <option value="182">339990 All other miscellaneous manufacturing</option>
+    <option value="183">311111 Dog and cat food manufacturing</option>
+    <option value="184">311119 Other animal food manufacturing</option>
+    <option value="185">311210 Flour milling and malt manufacturing</option>
+    <option value="186">311221 Wet corn milling</option>
+    <option value="187">31122A Soybean and other oilseed processing</option>
+    <option value="188">311225 Fats and oils refining and blending</option>
+    <option value="189">311230 Breakfast cereal manufacturing</option>
+    <option value="190">311300 Sugar and confectionery product manufacturing</option>
+    <option value="191">311410 Frozen food manufacturing</option>
+    <option value="192">311420 Fruit and vegetable canning, pickling, and drying</option>
+    <option value="193">31151A Fluid milk and butter manufacturing</option>
+    <option value="194">311513 Cheese manufacturing</option>
+    <option value="195">311514 Dry, condensed, and evaporated dairy product manufacturing</option>
+    <option value="196">311520 Ice cream and frozen dessert manufacturing</option>
+    <option value="197">31161A Animal (except poultry) slaughtering, rendering, and processing</option>
+    <option value="198">311615 Poultry processing</option>
+    <option value="199">311700 Seafood product preparation and packaging</option>
+    <option value="200">311810 Bread and bakery product manufacturing</option>
+    <option value="201">3118A0 Cookie, cracker, pasta, and tortilla manufacturing</option>
+    <option value="202">311910 Snack food manufacturing</option>
+    <option value="203">311920 Coffee and tea manufacturing</option>
+    <option value="204">311930 Flavoring syrup and concentrate manufacturing</option>
+    <option value="205">311940 Seasoning and dressing manufacturing</option>
+    <option value="206">311990 All other food manufacturing</option>
+    <option value="207">312110 Soft drink and ice manufacturing</option>
+    <option value="208">312120 Breweries</option>
+    <option value="209">312130 Wineries</option>
+    <option value="210">312140 Distilleries</option>
+    <option value="211">312200 Tobacco product manufacturing</option>
+    <option value="212">313100 Fiber, yarn, and thread mills</option>
+    <option value="213">313200 Fabric mills</option>
+    <option value="214">313300 Textile and fabric finishing and fabric coating mills</option>
+    <option value="215">314110 Carpet and rug mills</option>
+    <option value="216">314120 Curtain and linen mills</option>
+    <option value="217">314900 Other textile product mills</option>
+    <option value="218">315000 Apparel manufacturing</option>
+    <option value="219">316000 Leather and allied product manufacturing</option>
+    <option value="220">322110 Pulp mills</option>
+    <option value="221">322120 Paper mills</option>
+    <option value="222">322130 Paperboard mills</option>
+    <option value="223">322210 Paperboard container manufacturing</option>
+    <option value="224">322220 Paper bag and coated and treated paper manufacturing</option>
+    <option value="225">322230 Stationery product manufacturing</option>
+    <option value="226">322291 Sanitary paper product manufacturing</option>
+    <option value="227">322299 All other converted paper product manufacturing</option>
+    <option value="228">323110 Printing</option>
+    <option value="229">323120 Support activities for printing</option>
+    <option value="230">324110 Petroleum refineries</option>
+    <option value="231">324121 Asphalt paving mixture and block manufacturing</option>
+    <option value="232">324122 Asphalt shingle and coating materials manufacturing</option>
+    <option value="233">324190 Other petroleum and coal products manufacturing</option>
+    <option value="234">325110 Petrochemical manufacturing</option>
+    <option value="235">325120 Industrial gas manufacturing</option>
+    <option value="236">325130 Synthetic dye and pigment manufacturing</option>
+    <option value="237">325180 Other basic inorganic chemical manufacturing</option>
+    <option value="238">325190 Other basic organic chemical manufacturing</option>
+    <option value="239">325211 Plastics material and resin manufacturing</option>
+    <option value="240">3252A0 Synthetic rubber and artificial and synthetic fibers and filaments manufacturing</option>
+    <option value="241">325310 Fertilizer manufacturing</option>
+    <option value="242">325320 Pesticide and other agricultural chemical manufacturing</option>
+    <option value="243">325411 Medicinal and botanical manufacturing</option>
+    <option value="244">325412 Pharmaceutical preparation manufacturing</option>
+    <option value="245">325413 In-vitro diagnostic substance manufacturing</option>
+    <option value="246">325414 Biological product (except diagnostic) manufacturing</option>
+    <option value="247">325510 Paint and coating manufacturing</option>
+    <option value="248">325520 Adhesive manufacturing</option>
+    <option value="249">325610 Soap and cleaning compound manufacturing</option>
+    <option value="250">325620 Toilet preparation manufacturing</option>
+    <option value="251">325910 Printing ink manufacturing</option>
+    <option value="252">3259A0 All other chemical product and preparation manufacturing</option>
+    <option value="253">326110 Plastics packaging materials and unlaminated film and sheet manufacturing</option>
+    <option value="254">326120 Plastics pipe, pipe fitting, and unlaminated profile shape manufacturing</option>
+    <option value="255">326130 Laminated plastics plate, sheet (except packaging), and shape manufacturing</option>
+    <option value="256">326140 Polystyrene foam product manufacturing</option>
+    <option value="257">326150 Urethane and other foam product (except polystyrene) manufacturing</option>
+    <option value="258">326160 Plastics bottle manufacturing</option>
+    <option value="259">326190 Other plastics product manufacturing</option>
+    <option value="260">326210 Tire manufacturing</option>
+    <option value="261">326220 Rubber and plastics hoses and belting manufacturing</option>
+    <option value="262">326290 Other rubber product manufacturing</option>
+    <option value="263">420000 Wholesale trade</option>
+    <option value="264">441000 Motor vehicle and parts dealers</option>
+    <option value="265">445000 Food and beverage stores</option>
+    <option value="266">452000 General merchandise stores</option>
+    <option value="267">4A0000 Other retail</option>
+    <option value="268">481000 Air transportation</option>
+    <option value="269">482000 Rail transportation</option>
+    <option value="270">483000 Water transportation</option>
+    <option value="271">484000 Truck transportation</option>
+    <option value="272">485A00 Transit and ground passenger transportation*</option>
+    <option value="273">486000 Pipeline transportation</option>
+    <option value="274">48A000 Scenic and sightseeing transportation and support activities for transportation</option>
+    <option value="275">492000 Couriers and messengers</option>
+    <option value="276">493000 Warehousing and storage</option>
+    <option value="277">511110 Newspaper publishers</option>
+    <option value="278">511120 Periodical publishers</option>
+    <option value="279">511130 Book publishers</option>
+    <option value="280">5111A0 Directory, mailing list, and other publishers</option>
+    <option value="281">511200 Software publishers</option>
+    <option value="282">512100 Motion picture and video industries</option>
+    <option value="283">512200 Sound recording industries</option>
+    <option value="284">515100 Radio and television broadcasting</option>
+    <option value="285">515200 Cable and other subscription programming</option>
+    <option value="286">517110 Wired telecommunications carriers</option>
+    <option value="287">517210 Wireless telecommunications carriers (except satellite)</option>
+    <option value="288">517A00 Satellite, telecommunications resellers, and all other telecommunications</option>
+    <option value="289">518200 Data processing, hosting, and related services</option>
+    <option value="290">5191A0 News syndicates, libraries, archives, and all other information services</option>
+    <option value="291">519130 Internet publishing and broadcasting and Web search portals</option>
+    <option value="292">52A000 Monetary authorities and depository credit intermediation</option>
+    <option value="293">522A00 Nondepository credit intermediation and related activities</option>
+    <option value="294">523A00 Securities and commodity contracts intermediation and brokerage</option>
+    <option value="295">523900 Other financial investment activities</option>
+    <option value="296">524100 Insurance carriers</option>
+    <option value="297">524200 Insurance agencies, brokerages, and related activities</option>
+    <option value="298">525000 Funds, trusts, and other financial vehicles</option>
+    <option value="299">531000 Real estate</option>
+    <option value="300">532100 Automotive equipment rental and leasing</option>
+    <option value="301">532A00 Consumer goods and general rental centers</option>
+    <option value="302">532400 Commercial and industrial machinery and equipment rental and leasing</option>
+    <option value="303">533000 Lessors of nonfinancial intangible assets</option>
+    <option value="304">541100 Legal services</option>
+    <option value="305">541511 Custom computer programming services</option>
+    <option value="306">541512 Computer systems design services</option>
+    <option value="307">54151A Other computer related services, including facilities management</option>
+    <option value="308">541200 Accounting, tax preparation, bookkeeping, and payroll services</option>
+    <option value="309">541300 Architectural, engineering, and related services</option>
+    <option value="310">541400 Specialized design services</option>
+    <option value="311">541610 Management consulting services</option>
+    <option value="312">5416A0 Environmental and other technical consulting services</option>
+    <option value="313">541700 Scientific research and development services</option>
+    <option value="314">541800 Advertising, public relations, and related services</option>
+    <option value="315">5419A0 Marketing research and all other miscellaneous professional, scientific, and technical services</option>
+    <option value="316">541920 Photographic services</option>
+    <option value="317">541940 Veterinary services</option>
+    <option value="318">550000 Management of companies and enterprises</option>
+    <option value="319">561100 Office administrative services</option>
+    <option value="320">561200 Facilities support services</option>
+    <option value="321">561300 Employment services</option>
+    <option value="322">561400 Business support services</option>
+    <option value="323">561500 Travel arrangement and reservation services</option>
+    <option value="324">561600 Investigation and security services</option>
+    <option value="325">561700 Services to buildings and dwellings</option>
+    <option value="326">561900 Other support services</option>
+    <option value="327">562000 Waste management and remediation services</option>
+    <option value="328">611100 Elementary and secondary schools</option>
+    <option value="329">611A00 Junior colleges, colleges, universities, and professional schools</option>
+    <option value="330">611B00 Other educational services</option>
+    <option value="331">621100 Offices of physicians</option>
+    <option value="332">621200 Offices of dentists</option>
+    <option value="333">621300 Offices of other health practitioners</option>
+    <option value="334">621400 Outpatient care centers</option>
+    <option value="335">621500 Medical and diagnostic laboratories</option>
+    <option value="336">621600 Home health care services</option>
+    <option value="337">621900 Other ambulatory health care services</option>
+    <option value="338">622000 Hospitals</option>
+    <option value="339">623A00 Nursing and community care facilities</option>
+    <option value="340">623B00 Residential mental retardation, mental health, substance abuse and other facilities</option>
+    <option value="341">624100 Individual and family services</option>
+    <option value="342">624A00 Community food, housing, and other relief services, including rehabilitation services</option>
+    <option value="343">624400 Child day care services</option>
+    <option value="344">711100 Performing arts companies</option>
+    <option value="345">711200 Spectator sports</option>
+    <option value="346">711A00 Promoters of performing arts and sports and agents for public figures</option>
+    <option value="347">711500 Independent artists, writers, and performers</option>
+    <option value="348">712000 Museums, historical sites, zoos, and parks</option>
+    <option value="349">713100 Amusement parks and arcades</option>
+    <option value="350">713200 Gambling industries (except casino hotels)</option>
+    <option value="351">713900 Other amusement and recreation industries</option>
+    <option value="352">721000 Accommodation</option>
+    <option value="353">722110 Full-service restaurants</option>
+    <option value="354">722211 Limited-service restaurants</option>
+    <option value="355">722A00 All other food and drinking places</option>
+    <option value="356">811100 Automotive repair and maintenance</option>
+    <option value="357">811200 Electronic and precision equipment repair and maintenance</option>
+    <option value="358">811300 Commercial and industrial machinery and equipment repair and maintenance</option>
+    <option value="359">811400 Personal and household goods repair and maintenance</option>
+    <option value="360">812100 Personal care services</option>
+    <option value="361">812200 Death care services</option>
+    <option value="362">812300 Dry-cleaning and laundry services</option>
+    <option value="363">812900 Other personal services</option>
+    <option value="364">813100 Religious organizations</option>
+    <option value="365">813A00 Grantmaking, giving, and social advocacy organizations</option>
+    <option value="366">813B00 Civic, social, professional, and similar organizations</option>
+    <option value="367">491000 Postal service</option>
+    <option value="368">S00A00 Other government enterprises</option>
+    <option value="369">H00000 Households</option>
+
+</select>
+            <span style="font-size: 8pt">*Industry includes government enterprises.</span>
+
+            <input class="btn rims-orange-btn" type="submit" name="ctl00$RIMSPlaceHolder$btnDetailAdd" value="Select" id="RIMSPlaceHolder_btnDetailAdd" title="Select" />
+        </td>
+                            
+        <td style="width: 70px" valign="middle" class="buttonselect" align="center"></td>
+        <td>
+
+            <select size="4" name="ctl00$RIMSPlaceHolder$SelDetailBox" multiple="multiple" id="RIMSPlaceHolder_SelDetailBox" style="height:160px;width:346px;"></select>
+
+            <input class="btn rims-orange-btn" type="submit" name="ctl00$RIMSPlaceHolder$btnDetailRemove" value="Remove" id="RIMSPlaceHolder_btnDetailRemove" title="Remove" /></td>
+                    </tr>
+    </table>
+                            
+                            
+                        <br />
+                        
+                        
+                        <span id="RIMSPlaceHolder_lblContig" style="color:Red;"></span>
+                        &nbsp;
+                        <br />
+                        <input class="btn rims-blue-btn" type="submit" name="ctl00$RIMSPlaceHolder$Button1" value="Add to Cart" title="Add to Cart" />&nbsp;<!-- removed  id="RIMSPlaceHolder_Button1"  -->
+                        &nbsp;<br />
+                       
+                        </td>
+                        </tr>
+                        </table>
+</div>
+
+
+            <!--*********************End of Body Content*************************-->
+           </div>
+        </div>
+
+
+            <!--*********************Start of Login panel modal dialog*************************-->
+            <div id="LoginPanel">
+  
+                <p id="validateTips" class="validateTips">Please enter your RIMS account information.</p>
+                <table border="0">
+                    <tbody>
+                        <tr>
+                            <td class="email-label">
+                                <label for="TextBoxUserName" id="LabelUserName">E-mail Address:</label></td>
+                            <td class="email-input">
+                                <input name="ctl00$TextBoxUserName" type="text" id="TextBoxUserName" /></td>
+                        </tr>
+                        <tr>
+                            <td class="password-label">
+                                <label for="TextBoxPassword" id="LabelPassword">Password:</label></td>
+                            <td class="password-input">
+                                <input name="ctl00$TextBoxPassword" type="password" id="TextBoxPassword" /></td>
+                        </tr>
+
+                        <tr>
+                            <input type="submit" name="ctl00$ButtonLogin" value="Sign In" onclick="return false;" id="ButtonLogin" tabindex="-1" style="position: absolute; top: -1000px;" />
+                        </tr>
+
+                        <tr>
+                            <td class="alternate-links" colspan="2"><a href="register.aspx">Register</a>&nbsp;|&nbsp;<a href="forgotpassword.aspx">Forgot your password?</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+</div>
+            <!--*********************End of Login panel modal dialog*************************-->
+
+            <!--*********************Start of info modal dialog*************************-->
+            <div id="infodialog">
+                No info available.
+            </div>
+            <!--*********************End of info modal dialog*************************-->
+
+
+        </div>
+        <!-- content div -->
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+var callBackFrameUrl='/regional/rims/rimsii/WebResource.axd?d=jj5J_PTEsYKabw7GgLLDBBZFEyMPwfDS0rwZwSd25b4_I_trbA2sj_EaezZQk9gVgto0oAXbITH19tmA0&t=635803038500000000';
+WebForm_InitCallback();WebForm_AutoFocus('ButtonLogin');//]]>
+</script>
+</form>
+
+    <div id="footer_wrapper">
+  <div class="centerContent_wrapper">
+    <div class="lastUpdate_wrapper">
+      <div class="lastUpdate_wrapperRight"> 
+        <script type="text/JavaScript" language="JavaScript">
+          <!-- 
+          // format date as dd-mmm-yy
+          // example: 12-Jan-99
+          function date_ddmmmyy(date){
+            var d = date.getDate();
+            var m = date.getMonth() + 1;
+            var y = date.getYear();
+          
+            if(y >= 2000){y -= 2000;}
+            if(y >= 100){y -= 100;}
+          
+            var mmm = ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':(10==m)?'Oct':(11==m)?'Nov':'Dec';
+          
+            return "" + (d<10?"0"+d:d) + "-" + mmm + "-" + (y<10?"0"+y:y)
+          ;}
+          
+          function date_lastmodified(){
+            var lmd = document.lastModified;
+            var s   = "Unknown";
+            var d1;
+          
+            if(0 != (d1=Date.parse(lmd))){s = "" + date_ddmmmyy(new Date(d1));}
+            return s;
+          }
+          
+          document.write( "Updated: " + date_lastmodified() );
+          // -->
+        </script> 
+      </div>
+    </div>
+    <div class="footerLinks_shell">
+      <div class="footerLinks_wrapper">
+        <div class="columnLeft_wrapper" style="width:210px;">
+          <ul class="topicMain">
+            <li><a href="/contacts/search.htm">Contact Us</a></li>
+            <li><a href="/faq/index.cfm">Frequently Asked Questions</a></li>
+            <li><a href="/about/index.htm">About BEA</a></li>
+            <li><a href="/about/policies.htm">Policies</a></li>
+          </ul>
+          <ul class="general_links">
+            <li><a href="/about/Privacy_Statement.htm">Privacy Policy</a></li>
+            <li><a href="/about/accessibility.htm">Accessibility</a></li>
+            <li><a href="/_pdf/scientific_integrity_statement_of_the_principal_statistical_agencies.pdf">Commitment to Scientific Integrity</a></li>
+            <li><a href="/about/infoqual.htm">Information Quality Guidelines</a></li>
+            <li><a href="/about/BEAdissemination.htm">Data Dissemination Practices</a></li>
+            <li><a href="/data.htm">Open Data</a></li>
+            <li><a href="/status/index.cfm">ESR System</a></li>
+            <li><a href="http://www.usa.gov/">USA.gov</a></li>
+            <li><a href="http://www.commerce.gov/">COMMERCE.gov</a></li>
+          </ul>
+        </div>
+        <div class="columnLeft_wrapper">
+          <ul>
+            <li class="title">News</li>
+            <li><a href="/newsreleases/glance.htm">U.S. Economy at a Glance</a></li>
+            <li><a href="/newsreleases/rels.htm">Current Releases</a></li>
+            <li><a href="/newsreleases/release_archive.htm">News Release Archive</a></li>
+          </ul>
+        </div>
+        <div class="columnLeft_wrapper">
+          <ul>
+            <li class="title">Information For...</li>
+            <li><a href="/newsroom/index.htm">Media</a></li>
+            <li><a href="/congressional/index.htm">Congressional Users</a></li>
+            <li><a href="/efile/">eFile Users</a></li>
+            <li><a href="/surveys/respondent_be13.htm">BE-13 Respondents</a></li>
+            <li><a href="/surveys/privatefunds">Private Fund Reporters</a></li>
+            <li><a href="/jobs/index.htm">Job Seekers</a></li>
+          </ul>
+        </div>
+        <div class="columnLeft_wrapper">
+          <ul>
+            <li class="title">Factsheets</li>
+            <li><a href="/regional/bearfacts/">Regional PI &amp; GDP</a></li>
+            <li><a href="/international/factsheet/">Int'l Trade &amp; Investment</a></li>
+          </ul>
+        </div>
+        <div class="columnLeft_wrapper">
+          <ul>
+            <li class="title">Publications</li>
+            <li><a href="/scb/index.htm"><em>Survey of Current Business</em></a></li>
+            <li><a href="/research/by_topic.htm">Papers by Topic</a></li>
+            <li><a href="/agency/pdf/BEA_Customer_Guide.pdf">BEA Customer Guide</a></li>
+          </ul>
+        </div>
+        <div class="columnLeft_wrapper">
+          <ul>
+            <li class="title">Resources</li>
+            <li><a href="/itable/index.cfm">Interactive Data</a></li>
+            <li><a href="/research/index.htm">Research at BEA</a></li>
+            <li><a href="/developers/">Developers</a></li>
+            <li><a href="/video/index.htm">Multimedia</a></li>
+            <li><a href="/faq/index.cfm">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="columnLeft_wrapper">
+          <ul>
+            <li class="title">More</li>
+            <li><a href="/about/director.htm">Director's Page</a></li>
+            <li><a href="/agency/exhibit_schedule.htm">Conferences</a></li>
+            <li><a href="/about/BEAciting.htm">Guidelines for Citing BEA Information</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</body>
+</html> 
+  <!--Analytics --> 
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37717925-1', 'auto');
+  ga('send', 'pageview');
+
+</script> 
+  <script type="text/javascript" src="scripts/uaevents.js"></script> 
+  <script type="text/javascript">
+  //<![CDATA[
+    var aid = "u.s.bureauofeconomicanalysis";
+    var script = document.createElement('script');
+    script.type = "text/javascript";
+    script.src = "http://search.usa.gov/javascripts/stats.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  //]]>
+</script> 
+</div>
+</body></html>
