@@ -1,0 +1,172 @@
+﻿
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--CSS Frameworks -->
+    <link rel="stylesheet" type="text/css" href="css/reset_global.css" />
+    <link rel="stylesheet" type="text/css" href="framework/jquery-ui-1.11.4/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="framework/bootstrap-3.3.6-dist/css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-override.css" />
+    <link rel="stylesheet" type="text/css" href="css/bea_refresh-bootstrap-fix.css" />
+    <link rel="stylesheet" type="text/css" href="css/bea_refresh.css" />
+
+    <link rel="stylesheet" type="text/css" href="scripts/fancybox2/jquery.fancybox.css" />
+
+
+    <!--Javascript Frameworks -->
+    <script src="framework/jquery-1.12.3.min.js"></script>
+    <script src="framework/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script src="framework/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <!--Javascript - Fancybox -->
+    <script type="text/javascript" src="scripts/fancybox2/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="scripts/fancybox2/jquery.fancybox-media.js"></script>
+
+    <!-- Radhika Custom Styles -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+    <p id="p1" title="Here's the native tooltip popup.">
+        Here&#39;s something with a native tooltip.
+    </p>
+    <br />
+    <p id="p2" title="Here's the jquery tooltip popup.">
+        Here&#39;s something with a jquery tooltip.
+    </p>
+    <br />
+    <p id="p3" onclick='invokeRIMSdialog(event, "P3 Tooltip dialog", "Inline Content", false, 600, 400, false); return false;' title="P3 title content">
+        Here&#39;s something with a dialog tooltip. inline content - size 600X400
+    </p>
+    <br />
+    <p id="p4" onclick='invokeRIMSdialog(event, "P4 Tooltip dialog", "Inline Content", false, 600, 400, false); return false;' title="P4 title content">
+        Here&#39;s something with a dialog tooltip. inline content - size 600X400
+    </p>
+    <br />
+    <p id="p5" onclick='invokeRIMSdialog(event, "P5 Tooltip dialog", "ThingsToConsider.html", false, 600, 400, false); return false;' title="P5 title content">
+        Here&#39;s something with a dialog tooltip. html reference - size 600X400
+    </p>
+    <br />
+    <p id="p6" onclick='invokeRIMSdialog(event, "P6 Tooltip dialog", "images/bea-final-logo-blue-backing.png", false, 600, 400, false); return false;' title="P6 title content">
+        Here&#39;s something with a dialog tooltip. img reference - size 600X400
+    </p>
+    <br />
+
+    <p id="p7" onclick='invokeRIMSdialog(event, "P7 Tooltip dialog", "Inline Content", false, undefined, undefined, false); return false;' title="P7 title content">
+        Here&#39;s something with a dialog tooltip. inline content - size undefined
+    </p>
+    <br />
+    <p id="p8" onclick='invokeRIMSdialog(event, "P8 Tooltip dialog", undefined, false, undefined, undefined, false); return false;' title="P8 title content">
+        Here&#39;s something with a dialog tooltip. undefined content - size undefined
+    </p>
+    <br />
+    <p id="p9" onclick='invokeRIMSdialog(event, "P9 Tooltip dialog", "ThingsToConsider.html", false, undefined, undefined, false); return false;' title="P9 title content">
+        Here&#39;s something with a dialog tooltip. html reference - size undefined
+    </p>
+    <br />
+    <p id="p10" onclick='invokeRIMSdialog(event, undefined, "images/bea-final-logo-blue-backing.png", false, undefined, undefined, true); return false;'>
+        Here&#39;s something with a dialog tooltip. img reference - undefined title - size undefined
+    </p>
+    <br />
+
+    <script>
+        var tooltipdialogpanel;
+
+        $(function () {
+            $("#p2").tooltip();
+
+            // Conversion of dialog classes to Bootstrap (only works with jQueryUI v 1.12+)
+            //$.extend($.ui.dialog.prototype.options.classes, {
+            //    "ui-dialog": "modal-content",
+            //    "ui-dialog-titlebar": "modal-header",
+            //    "ui-dialog-title": "modal-title",
+            //    "ui-dialog-titlebar-close": "close",
+            //    "ui-dialog-content": "modal-body",
+            //    "ui-dialog-buttonpane": "modal-footer"
+            //});
+
+        });
+
+        //*******************
+        function invokeRIMSdialog(e, dialogtitle, dialogcontent, showmodal, width, height, center) {
+
+            //
+            // invokeRIMSdialog v 1.0 - Walt Kampas
+            // Description: Displays a popup dialog (modal or not).  Replaces previous dialogs. Optionally uses specified size, or dynamically adjusts based on content.
+            // Displays near target element or centers on screen.
+            //
+            // requires: jQueryUI
+            // example: <p id="p1" onclick='invokeRIMSdialog(event, "P1 dialog", "Inline Content", false, 600, 400, false); return false;' title="P1 title content">
+            //
+            // parameters 
+            // e - event passed from call
+            // dialogtitle - text content of title bar
+            // dialogcontent - literal string, html page url, or image url of dialog content
+            // showmodal - boolean indicating whether dialog is modal or not
+            // width - numeric width of dialog, or undefined for auto adjusted width, or "big" to take up most of window
+            // height - numeric height of dialog, or undefined for auto adjusted height, or "big" to take up most of window
+            // center - boolean indicating whether to center dialog in window, or undefined place near target element
+            //
+
+            if (tooltipdialogpanel) {
+                tooltipdialogpanel.dialog("option", "hide", false); //close existing dialogs quickly without effect
+                tooltipdialogpanel.dialog("close");
+                tooltipdialogpanel.dialog("destroy");
+            }
+            evt = e || window.event;
+            var target = evt.target || evt.srcElement;
+
+            tooltipdialogpanel = $('<div id="tooltipdialog"></div>');
+
+            tooltipdialogpanel.dialog({
+                autoOpen: false,
+                title: dialogtitle ? dialogtitle : target.title,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: true,
+                width: $.isNumeric(width) ? width : (width == 'big' ? $(window).width() - 90 : 'auto'),
+                height: $.isNumeric(height) ? height : (height == 'big' ? $(window).height() - 90 : 'auto'),
+                position: center ? { my: "center", at: "center", of: window } : { my: "left top", at: "left bottom", of: target },
+                modal: showmodal,
+                show: { effect: "fade", duration: 200 },
+                hide: { effect: "fade", duration: 200 }
+            });
+
+            var imageRegex = /\.(jpg|gif|png)$/gm;
+            var urlRegex = /\.(html*|aspx*)/gm;
+
+            if (urlRegex.test(dialogcontent)) {
+                tooltipdialogpanel.load(dialogcontent, function () {
+                    tooltipdialogpanel.dialog("option", "position", center ? { my: "center", at: "center", of: window } : { my: "left top", at: "left bottom", of: target }); //recenter after filling content
+                    tooltipdialogpanel.dialog("open");
+                    tooltipdialogpanel.scrollTop();
+                    return;
+                });
+            }
+            else if (imageRegex.test(dialogcontent)) {
+                tooltipdialogpanel.html('<img src="' + dialogcontent + '" />', function () {
+                    tooltipdialogpanel.dialog("open");
+                    return;
+                });
+            }
+            else if (dialogcontent == null) {
+                tooltipdialogpanel.html(target.title);
+            }
+            else {
+                tooltipdialogpanel.html(dialogcontent);
+            }
+
+            tooltipdialogpanel.dialog("open");
+            tooltipdialogpanel.scrollTop();
+        };
+
+        //*******************
+    </script>
+</body>
+</html>
