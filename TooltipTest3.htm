@@ -41,36 +41,36 @@
         Here&#39;s something with a jquery tooltip.
     </p>
     <br />
-    <p id="p3" onclick='invokeRIMSdialog(event, "P3 Tooltip dialog", "Inline Content", false, 600, 400, false); return false;' title="P3 title content">
+    <p id="p3" onclick='invokeRIMSdialog(this, "P3 Tooltip dialog", "Inline Content", false, 600, 400, false); return false;' title="P3 title content">
         Here&#39;s something with a dialog tooltip. inline content - size 600X400
     </p>
     <br />
-    <p id="p4" onclick='invokeRIMSdialog(event, "P4 Tooltip dialog", "Inline Content", false, 600, 400, false); return false;' title="P4 title content">
+    <p id="p4" onclick='invokeRIMSdialog(this, "P4 Tooltip dialog", "Inline Content", false, 600, 400, false); return false;' title="P4 title content">
         Here&#39;s something with a dialog tooltip. inline content - size 600X400
     </p>
     <br />
-    <p id="p5" onclick='invokeRIMSdialog(event, "P5 Tooltip dialog", "ThingsToConsider.html", false, 600, 400, false); return false;' title="P5 title content">
+    <p id="p5" onclick='invokeRIMSdialog(this, "P5 Tooltip dialog", "ThingsToConsider.html", false, 600, 400, false); return false;' title="P5 title content">
         Here&#39;s something with a dialog tooltip. html reference - size 600X400
     </p>
     <br />
-    <p id="p6" onclick='invokeRIMSdialog(event, "P6 Tooltip dialog", "images/bea-final-logo-blue-backing.png", false, 600, 400, false); return false;' title="P6 title content">
+    <p id="p6" onclick='invokeRIMSdialog(this, "P6 Tooltip dialog", "images/bea-final-logo-blue-backing.png", false, 600, 400, false); return false;' title="P6 title content">
         Here&#39;s something with a dialog tooltip. img reference - size 600X400
     </p>
     <br />
 
-    <p id="p7" onclick='invokeRIMSdialog(event, "P7 Tooltip dialog", "Inline Content", false, undefined, undefined, false); return false;' title="P7 title content">
+    <p id="p7" onclick='invokeRIMSdialog(this, "P7 Tooltip dialog", "Inline Content", false, undefined, undefined, false); return false;' title="P7 title content">
         Here&#39;s something with a dialog tooltip. inline content - size undefined
     </p>
     <br />
-    <p id="p8" onclick='invokeRIMSdialog(event, "P8 Tooltip dialog", undefined, false, undefined, undefined, false); return false;' title="P8 title content">
+    <p id="p8" onclick='invokeRIMSdialog(this, "P8 Tooltip dialog", undefined, false, undefined, undefined, false); return false;' title="P8 title content">
         Here&#39;s something with a dialog tooltip. undefined content - size undefined
     </p>
     <br />
-    <p id="p9" onclick='invokeRIMSdialog(event, "P9 Tooltip dialog", "ThingsToConsider.html", false, undefined, undefined, false); return false;' title="P9 title content">
+    <p id="p9" onclick='invokeRIMSdialog(this, "P9 Tooltip dialog", "ThingsToConsider.html", false, undefined, undefined, false); return false;' title="P9 title content">
         Here&#39;s something with a dialog tooltip. html reference - size undefined
     </p>
     <br />
-    <p id="p10" onclick='invokeRIMSdialog(event, undefined, "images/bea-final-logo-blue-backing.png", false, undefined, undefined, true); return false;'>
+    <p id="p10" onclick='invokeRIMSdialog(this, undefined, "images/bea-final-logo-blue-backing.png", false, undefined, undefined, true); return false;'>
         Here&#39;s something with a dialog tooltip. img reference - undefined title - size undefined
     </p>
     <br />
@@ -94,7 +94,7 @@
         });
 
         //*******************
-        function invokeRIMSdialog(e, dialogtitle, dialogcontent, showmodal, width, height, center) {
+        function invokeRIMSdialog(target, dialogtitle, dialogcontent, showmodal, width, height, center) {
 
             //
             // invokeRIMSdialog v 1.0 - Walt Kampas
@@ -119,8 +119,8 @@
                 tooltipdialogpanel.dialog("close");
                 tooltipdialogpanel.dialog("destroy");
             }
-            evt = e || window.event;
-            var target = evt.target || evt.srcElement;
+            //evt = e || window.event;
+            //var target = evt.target || evt.srcElement;
 
             tooltipdialogpanel = $('<div id="tooltipdialog"></div>');
 
