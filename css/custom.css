@@ -296,8 +296,24 @@ i{
   margin: 0 0 0 10px;
 }
 
-#content td, th {
+#content .table {
+    border-collapse: collapse;
+    width: 20%;
+}
+
+#content .table.table-hover.region-menu tr, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+ /*   padding: 8px;*/
     padding: 0px 40px 0 0px;
+}
+
+#content table a.fa {
+  float: right;
+}
+
+#content input {
+  border-radius: 0px;
 }
 
 /* ----------- Temporary fix for 3 images to show ----------- */
