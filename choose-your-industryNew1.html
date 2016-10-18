@@ -106,46 +106,62 @@
     <script src="scripts/jquery.resizeimagetoparent.min.js"></script>
 
     <script>
-        var logindialogpanel, infodialogpanel, form, redirectto, IsLoggedIn, IsAuthenticated, LoginRequired
+        var logindialogpanel, infodialogpanel, form, redirectto, IsLoggedIn, IsAuthenticated, LoginRequired;
+        var AggBox, DetailBox;
 
         $(function () {
 
 
-            var demo1 = $('[name=AggBox]').bootstrapDualListbox({
-                nonSelectedListLabel: 'Non-selected',
-                selectedListLabel: 'Selected',
-                preserveSelectionOnMove: 'moved',
-                moveOnSelect: true,
-
-                // Bootstrap 3 support
-                bootstrap2compatible: false,
-
-                // Default text
+            AggBox = $('#RIMSPlaceHolder_AggBox').bootstrapDualListbox({
+                bootstrap2Compatible: false,
                 filterTextClear: 'show all',
-                filterPlaceHolder: 'Filter',
+                filterPlaceHolder: 'Search',
                 moveSelectedLabel: 'Move selected',
                 moveAllLabel: 'Move all',
                 removeSelectedLabel: 'Remove selected',
                 removeAllLabel: 'Remove all',
-
-                // 'all' / 'moved' / false
-                preserveselectiononmove: false,
-
-                // true/false (forced true on androids, see the comment later)
-                initialfilterfrom: '',               // string, filter selectables list on init
-                initialfilterto: '',               // string, filter selected list on init
-                helperselectnamepostfix: '_helper',    // 'string_of_postfix' / false
-                infotext: 'Showing all {0}',// text when all options are visible / false for no info text
-                infotextfiltered: '<span class="label label-warning">Filtered</span> {0} from {1}',// when not all of the options are visible due to the filter
-                infotextempty: 'Empty list',      // when there are no options present in the list
-                selectorminimalheight: 100,
-                showfilterinputs: true,
-                filterplaceholder: 'Search',
-                filtertextclear: 'show all',
-                filteronvalues: false             // filter by selector's values, boolean
-
+                moveOnSelect: true,                                                                 // true/false (forced true on androids, see the comment later)
+                preserveSelectionOnMove: false,                                                     // 'all' / 'moved' / false
+                selectedListLabel: false,                                                           // 'string', false
+                nonSelectedListLabel: false,                                                        // 'string', false
+                helperSelectNamePostfix: '_helper',                                                 // 'string_of_postfix' / false
+                selectorMinimalHeight: 80,
+                showFilterInputs: true,                                                             // whether to show filter inputs
+                nonSelectedFilter: '',                                                              // string, filter the non selected options
+                selectedFilter: '',                                                                 // string, filter the selected options
+                infoText: 'Showing all {0}',                                                        // text when all options are visible / false for no info text
+                infoTextFiltered: '<span class="label label-warning">Filtered</span> {0} from {1}', // when not all of the options are visible due to the filter
+                infoTextEmpty: '(none selected)',                                                        // when there are no options present in the list
+                filterOnValues: false,                                                              // filter by selector's values, boolean
+                sortByInputOrder: false
             });
 
+
+            DetailBox = $('#RIMSPlaceHolder_DetailBox').bootstrapDualListbox({
+                bootstrap2Compatible: false,
+                filterTextClear: 'show all',
+                filterPlaceHolder: 'Search',
+                moveSelectedLabel: 'Move selected',
+                moveAllLabel: 'Move all',
+                removeSelectedLabel: 'Remove selected',
+                removeAllLabel: 'Remove all',
+                moveOnSelect: true,                                                                 // true/false (forced true on androids, see the comment later)
+                preserveSelectionOnMove: false,                                                     // 'all' / 'moved' / false
+                selectedListLabel: false,                                                           // 'string', false
+                nonSelectedListLabel: false,                                                        // 'string', false
+                helperSelectNamePostfix: '_helper',                                                 // 'string_of_postfix' / false
+                selectorMinimalHeight: 80,
+                showFilterInputs: true,                                                             // whether to show filter inputs
+                nonSelectedFilter: '',                                                              // string, filter the non selected options
+                selectedFilter: '',                                                                 // string, filter the selected options
+                infoText: 'Showing all {0}',                                                        // text when all options are visible / false for no info text
+                infoTextFiltered: '<span class="label label-warning">Filtered</span> {0} from {1}', // when not all of the options are visible due to the filter
+                infoTextEmpty: '(none selected)',                                                        // when there are no options present in the list
+                filterOnValues: false,                                                              // filter by selector's values, boolean
+                sortByInputOrder: false
+            });
+
+            //$('#RIMSPlaceHolder_DetailBox').bootstrapDualListbox('setInfoTextEmpty', '(none selected)',true);
 
             IsLoggedIn = false;
             IsAuthenticated = false;
@@ -369,8 +385,7 @@
                     <input name="commit" class="search-input-button" id="search-submit" type="submit" value="Go">
                 </div>
             </div>
-            <input name="utf8" type="hidden" value="Ã¢�
-“" ">
+            <input name="utf8" type="hidden" value="Ã¢�“" ">
             <input name="affiliate" id="affiliate" type="hidden" value="u.s.bureauofeconomicanalysis">
         </form>
         <a class="bea-link" href="/index.htm"></a> <a class="doc-link" href="http://www.commerce.gov"></a>
@@ -403,38 +418,7 @@
         </nav>
 
         <div class="clear"></div><form name="rimsform" method="post" action="./home.aspx" id="rimsform">
-            <div>
-                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="CJBLjSqObIfR+waZbGxxgJdMhFtCHU8Y8vp/VCuqnkmkM9+YWqnJGpVVM7eDQKFLYgsdC4lY7QypuBAczLR/z1si3TIe/J5F9ZQYeOW3+jlLklTv7+wBXRHvUZ/kwRc+uz1KDikHbMm2VOdeRR1bVbCmJWWVEZgDkpLUfFqrNDoS9mv2x5RvTEs0lWn0gCOJdLmvo7KJwZxfPYDSr5uCAlCQYp+WXq1KW+jA7MaXnNXt2FWcZ0SHbWr6uAacBiXZR5Zq3qgwZ+dqWFIuNtyOMKGx2whuxT+XLOXVdq6GXFSPpILv1uMQe3sniJSnbve2iKqnbqicU8YCJU0viMgNLQZkcc+YN8u/jvMgy2Dem2bDfMrmxR+G/h6R2S+23FweCDgVhg==" />
-            </div>
 
-            <script type="text/javascript">
-                //<![CDATA[
-                var theForm = document.forms['rimsform'];
-                if (!theForm) {
-                    theForm = document.rimsform;
-                }
-                function __doPostBack(eventTarget, eventArgument) {
-                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                        theForm.__EVENTTARGET.value = eventTarget;
-                        theForm.__EVENTARGUMENT.value = eventArgument;
-                        theForm.submit();
-                    }
-                }
-                //]]>
-            </script>
-
-
-            <script src="/regional/rims/rimsii/WebResource.axd?d=_tydoX_tT4-Z2WfxPp7Y_5VoOcrd8kJCnUKxtA0Bk7MzBOf9SpTRKGuMoaTe15cCcClA61hhKemJ67iL0&amp;t=635803038500000000" type="text/javascript"></script>
-
-
-            <script type="text/javascript">
-                //<![CDATA[
-                function ServerLoginSubmit(arg, context) { WebForm_DoCallback('ctl00', arg, ServerLoginCallback, context, null, false); }//]]>
-            </script>
-
-            <script src="/regional/rims/rimsii/WebResource.axd?d=dagktgv7f8XSRlNyRxdFERfiMEjZlyDzxbmDHgIdwReBTWLDp9v3UingL7nWu8M8VfVy2V3fSg1Hkkum0&amp;t=635803038500000000" type="text/javascript"></script>
             <div>
 
                 <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="87F8FA08" />
@@ -442,17 +426,6 @@
             </div>
             <!--*********************Start of Login controls*************************-->
             <div id="content">
-                <!--             <h1 class="CustomPageTitle">RIMS II Online Order and Delivery System</h1>
-                            <div id="LabelShowSessionMessage"></div>&nbsp;
-                            <div class="rimsloginheader btn-group">
-                                <span id="lblName"></span>&nbsp;
-
-                                <a id="Loginlnk" class="btn btn-default" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
-
-                                <a id="hlShoppingCart" class="btn btn-default" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Shopping Cart</a>
-                                <span id="lblitems"></span>
-                                <hr />
-                            </div> -->
                 <!--*********************End of Login controls*************************-->
                 <!--////////////////////////////////////////// THIS IS NEW CODE FOR WALT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
                 <!--*********************START OF NEW MENU*************************-->
@@ -460,22 +433,10 @@
                     <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3" style="padding: 0">
                         <div id="sidebarLeft_wrapper">
                             <div class="sidebarLeft_baseInsert">
-                                <!--                         <a class="logo" href="../index.cfm"></a> -->
                                 <a id="Loginlnk" class="btn btn-primary rims-blue-btn btn-block" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
 
                                 <a id="hlShoppingCart" class="btn btn-primary rims-blue-btn btn-block" href="page-one-ordering.html" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
-                                <!--                         <div class="sidebarLeft_section">
-                                                            <div class="menuItem"><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="home.aspx">Shopping Cart</a></div>
-                                                            <div class="menuItem"><a href="placeorder.aspx">View Multipliers</a></div>
-                                                            <div class="menuItem"> <a id="hlViewOrder" href="javascript:InvokeLogin(&#39;vieworder.aspx&#39;);">Case Studies</a></div>
-                                                            <div class="menuItem"> <a id="hlUpdateAccount" href="javascript:InvokeLogin(&#39;myaccount.aspx&#39;);">Sample Tables</a></div>
-                                                            <div class="menuItem"><a href="sampleorderdetail.aspx">Industry Lists</a></div>
-                                                            <div class="menuItem"><a href="industrylist.aspx?List=3">About RIMS</a></div>
-                                                            <div class="menuItem"><a href="/regional/pdf/rims/rimsii_user_guide.pdf" target="_blank">FAQ's</span></a></div>
-                                                            <div class="menuItem"><a href="help.aspx">Contact Us</a></div>
-                                                        </div> -->
                                 <ul class="nav navbar-stacked ">
-                                    <!--Removed BEA class sidebarLeft_section -->
                                     <li class="menuItem">
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                         <a href="home.aspx">Shopping Cart</a>
@@ -521,13 +482,6 @@
                         <!--********************* Breadcrumbs *********************-->
 
                         <div class="container-fluid breadcrumb">
-                            <!--             <div class="col-lg-10 btn-group btn-breadcrumb" style="padding-top: 8px;">
-                                            <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a>
-                                            <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a>
-                                            <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a>
-                                            <a href="#" class="btn btn-default">Step 4: Checkout</a>
-                                        </div> -->
-
                             <div class="col-lg-10" style="padding-top: 8px;">
                                 <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                 <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
@@ -548,25 +502,20 @@
                                 <tr>
                                     <td>
 
-                                        <b style="font-size:115%">Step 2: Select Your Industry</b> &nbsp;<i class="fa fa-question-circle" aria-hidden="true"></i><br />
-                                        </strong><span style="font-size: 8pt">
-                                            (Hold down Ctrl to
-                                            select multiple industries)&nbsp;
-                                        </span>
+                                        <b style="font-size:115%">Step 2: Select Your Industry</b><i class="fa fa-question-circle" aria-hidden="true"></i>
                                         <br />
                                         <br />
                                         <table border="0" cellpadding="0"
                                                cellspacing="0" style="width: 730px; height: 289px;">
-
                                             <tr>
                                                 <td style="height: 13px; width: 600px;">
                                                     <label for="AggBox">Aggregate Industries</label>
-                                                </td>                                               
+                                                </td>
                                             </tr>
                                             <tr>
 
-                                               <td style="width: 600px" colspan="3">
-                                                     <select size="4"  name="AggBox" multiple="multiple" id="RIMSPlaceHolder_AggBox" style="height:160px;width:600px;">
+                                                <td style="width: 600px" colspan="3">
+                                                    <select size="4" name="AggBox" multiple="multiple" id="RIMSPlaceHolder_AggBox" style="height:160px;width:600px;">
                                                         <option value="1">1 Farms</option>
                                                         <option value="2">2 Forestry, fishing, and related activities</option>
                                                         <option value="3">3 Oil and gas extraction</option>
@@ -635,34 +584,16 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="width: 322px; height: 9px;"></td>
-                                                <td style="width: 17px; height: 9px;"></td>
-                                                <td style="height: 9px"></td>
+                                                <td style="width: 600px; height: 25px;"></td>
                                             </tr>
                                             <tr>
-                                                <td style="width: 322px; height: 9px"></td>
-                                                <td style="width: 17px; height: 9px"></td>
-                                                <td style="height: 9px"></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 322px; height: 9px"></td>
-                                                <td style="width: 17px; height: 9px"></td>
-                                                <td style="height: 9px"></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 322px; height: 13px;">
+                                                <td style="width: 600px; height: 13px;">
                                                     <label for="DetailBox">Detailed Industries</label>
                                                 </td>
-                                                <td style="width: 17px; height: 13px;"></td>
-                                                <td style="height: 13px">
-                                                    <label for="SelDetailBox">Selected Detailed Industry(s)</label>
-                                                </td>
                                             </tr>
                                             <tr>
-
-                                                <td style="width: 322px">
-                                                    <input type="text" name="search bar" placeholder="Search" style="width: 346px;" />
-                                                    <select size="4" name="ctl00$RIMSPlaceHolder$DetailBox" multiple="multiple" id="RIMSPlaceHolder_DetailBox" style="height:160px;width:346px;">
+                                                <td style="width: 600px">
+                                                    <select size="4" name="DetailBox" multiple="multiple" id="RIMSPlaceHolder_DetailBox" style="height:160px;width:600px;">
                                                         <option value="1">1111C0 Oilseed and grain farming</option>
                                                         <option value="2">111200 Vegetable and melon farming</option>
                                                         <option value="3">111300 Fruit and tree nut farming</option>
@@ -1036,26 +967,12 @@
                                                     </select>
                                                     <span style="font-size: 8pt">*Industry includes government enterprises.</span>
 
-                                                    <input class="btn rims-orange-btn" type="submit" name="ctl00$RIMSPlaceHolder$btnDetailAdd" value="Select" id="RIMSPlaceHolder_btnDetailAdd" title="Select" style="float: right;" />
-                                                </td>
-
-                                                <td style="width: 70px" valign="middle" class="buttonselect" align="center"></td>
-                                                <td>
-
-                                                    <select size="4" name="ctl00$RIMSPlaceHolder$SelDetailBox" multiple="multiple" id="RIMSPlaceHolder_SelDetailBox" style="height:191px;width:346px;"></select>
-
-                                                    <input class="btn rims-orange-btn" type="submit" name="ctl00$RIMSPlaceHolder$btnDetailRemove" value="Remove" id="RIMSPlaceHolder_btnDetailRemove" title="Remove" />
                                                 </td>
                                             </tr>
                                         </table>
 
-
-                                        <br />
-
-
                                         <span id="RIMSPlaceHolder_lblContig" style="color:Red;"></span>
                                         &nbsp;
-                                        <br />
                                         <input class="btn rims-blue-btn btn-lg" type="submit" name="ctl00$RIMSPlaceHolder$Button1" value="Add to Cart" title="Add to Cart" style="float: right; margin-right: 38px;" />&nbsp;<!-- removed  id="RIMSPlaceHolder_Button1"  -->
                                         &nbsp;<br />
 
