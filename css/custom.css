@@ -187,6 +187,7 @@ i{
   padding-right: 5px;
 }
 
+
  /*----------- Breadcrumb styling ----------- */
 
 .breadcrumb .btn.btn-default {
@@ -260,7 +261,6 @@ i{
   margin-left: -15px;
 }
 
-
 .landing-page-heading {
     margin: 0 15px 15px 0 !important; 
 }
@@ -282,7 +282,6 @@ i{
   padding: 0px 0px 0px 0px;
 }
 
-
 #content #ordering-heading {
   padding-bottom: 30px;
 }
@@ -296,8 +295,41 @@ i{
   margin: 0 0 0 10px;
 }
 
-#content td, th {
+#content .table {
+    border-collapse: collapse;
+    width: 20%;
+}
+
+#content .table.table-hover.region-menu tr, th {
+    border: 1px solid black;
+    text-align: left;
+ /*   padding: 8px;*/
     padding: 0px 40px 0 0px;
+}
+
+#content .table.table-hover.region-menu a {
+  text-decoration: none;
+}
+
+#content .table > tbody > tr > td {
+  padding: 20px 15px 20px 20px;
+  border-top: 1px solid black;
+}
+
+#content input {
+  border-radius: 0px;
+}
+
+
+
+/* ----------- Tooltip styling ----------- */
+
+#content table a.fa {
+  float: right;
+}
+
+#content a.fa {
+  text-decoration: none;
 }
 
 /* ----------- Temporary fix for 3 images to show ----------- */
