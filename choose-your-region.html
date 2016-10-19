@@ -411,6 +411,8 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
             </div> -->
             <!--*********************End of Login controls*************************-->
 
+<!--////////////////////////////////////////// THIS IS NEW CODE FOR WALT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
 <!--*********************START OF NEW MENU*************************-->
         <div class="row">
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3" style="padding: 0">
@@ -419,7 +421,7 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
 <!--                         <a class="logo" href="../index.cfm"></a> -->
                 <a id="Loginlnk" class="btn btn-primary rims-blue-btn btn-block" style="color:#00267F;text-decoration:none;cursor: pointer;">Sign In</a>
                 
-                <a id="hlShoppingCart" class="btn btn-primary rims-blue-btn btn-block" href="javascript:InvokeLogin(&#39;basket.aspx&#39;);" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
+                <a id="hlShoppingCart" class="btn btn-primary rims-blue-btn btn-block" href="page-one-ordering.html" style="color:#00267F;text-decoration:none;">Order Multipliers</a>
 <!--                         <div class="sidebarLeft_section">
                             <div class="menuItem"><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="home.aspx">Shopping Cart</a></div>
                             <div class="menuItem"><a href="placeorder.aspx">View Multipliers</a></div>
@@ -498,44 +500,87 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
 
 
     <!--*********************Start of Body Content*************************-->
-        <div class="container-fluid">
-        <div class="row col-lg-10 col-md-10 col-sm-10" id="ordering-heading">
-            <h3 class="landing-page-heading"><strong>Step 1: Region vs. Industry</strong></h3>     
+               
+<div class="container-fluid">
 
-            <p class="landing-page-p">RIMS II multipliers are based on 2007 national benchmark input-output data and 2013 regional data.</p>
-            
+    <h3 class="landing-page-heading"><strong>Step 2: Define your region</strong></h3>
+    <p>NOTE: If you need multipliers for one industry for a state, <a href="choose-your-industry.html"> order by industry.</a> <a href="" class="fa fa-question-circle"></a>
+    <br />
+    Multipliers will be provided for the region as a whole, not for each county or state within the region. <br />
+    The statistical areas below are defined (geographically delineated) by the Office of Management and Budget in bulletin no. 13-01 issued February 28, 2013.
+    </p>
+
+        <table class="table table-hover region-menu">
+                <tr>
+                    <td><a href=""> Customized Region </a><a href="" class="fa fa-question-circle"></a></td>
+                </tr>
+                <tr>
+                    <td><a href=""> Metropolitan Statistical Areas (MSA) </a><a href="" class="fa fa-question-circle"></a></td>
+                </tr>
+                <tr>
+                    <td><a href=""> Metropolitan Divisions </a> <a href="" class="fa fa-question-circle"></a></td>
+                </tr>
+                <tr>
+                    <td><a href=""> Micropolitan Statistical Areas</a> <a href="" class="fa fa-question-circle"></a></td>
+                </tr>
+                <tr>
+                    <td><a href=""> Combined Statistical<br /> Areas (CSA)</a> <a href="" class="fa fa-question-circle"></a></td>
+                </tr>
+        </table>
+
+
+<!--         <ul class="table">
+            <a href=""><li>Customized Region <a href="" class="fa fa-question-circle"></a></li></a>
+            <li>Metropolitan Statistical Areas (MSA) <a href="" class="fa fa-question-circle"></a></li>
+            <li>Metropolitan Divisions <a href="" class="fa fa-question-circle"></a></li>
+            <li>Micropolitan Statistical Areas <a href="" class="fa fa-question-circle"></a></li>
+            <li>Combined Statistical Areas <a href="" class="fa fa-question-circle"></a></li>
+        </ul> -->
+
+
+    <h3 class="landing-page-heading"><strong>Step 2a: Name your Region</strong></h3>
+    <p>You may change the name of your region at checkout.<br />
+    You may use the Auto Name Region button if you selected a statistical area.
+    </p>
+
+    <div class="form-group">
+        <!-- <label for="inputPassword" class="control-label"></label> -->
+        <div class="form-inline row">
+          <div class="form-group col-lg-10">
+            <input type="" data-minlength="6" class="form-control" id="inputPassword" placeholder="" required style="width: 450px;">
+            <button type="submit" class="btn rims-blue-btn" style="margin: -2px 0 0 -5px;">Auto Name Region</button>
+            <div class="help-block">Do not use special characters such as @ # $ % &amp; : or ; in your region name.</div>
+          </div>
+
         </div>
-
-            <div class="row col-lg-2 col-md-2 col-sm-2">
-                    <a id="" class="btn btn-primary btn-block rims-orange-btn">RIMS Assumptions</a>
-                   <a id="" class="btn btn-primary btn-block rims-orange-btn">Things to Consider</a>
-            </div>
-
-            <div class="row col-lg-6 col-md-6 col-sm-6">
-                <img src="images/BEA-RIMS-Region-Infographic.png" width="200" class="responsive-image">
-                    <br>
-                <a href="choose-your-region.html" class="btn btn-default btn-block btn-lg rims-grey-btn">Order by Region</a>
-                    <br>
-                 <a href="" class="btn btn-primary rims-orange-btn">View list of 369 detailed industries</a>
-                <a href="" class="btn btn-primary rims-orange-btn">View list of 64 industry aggregates</a>                 
-                <i class="fa fa-question-circle" data-toggle="tooltip" aria-hidden="true"></i>
-
-            </div>
-                    
-
-            <div class="row col-lg-6 col-md-6 col-sm-6 column-margin">
-                    <img src="images/BEA-RIMS-Industry-Infographic.png" width="200" class="responsive-image">
-                        <br>
-                    <a href="choose-your-industry.html" class="btn btn-default btn-block btn-lg rims-grey-btn">Order by Industry</a>
-
-            </div>
-        </div>
-
-
+    </div>
+<button href="" class="btn rims-blue-btn">Add to Cart</button>
+<!--     <table>
+        <tr>
+            <td colspan="2" style="height: 10px">
+                <input name="ctl00$RIMSPlaceHolder$txtRegName" type="text" id="RIMSPlaceHolder_txtRegName" style="width:231px;" /><input type="submit" name="ctl00$RIMSPlaceHolder$btnAutoName" value="Auto Name Region" id="RIMSPlaceHolder_btnAutoName" />
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 9px">
+                <span id="RIMSPlaceHolder_lblContig" style="color:Red;"></span><span id="RIMSPlaceHolder_lblValidState" style="color:Red;"></span></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 14px"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 20px">
+                <input type="submit" name="ctl00$RIMSPlaceHolder$btnAddCart" value="Add to Cart" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$RIMSPlaceHolder$btnAddCart&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="RIMSPlaceHolder_btnAddCart" />&nbsp;
+                
+            </td>
+        </tr>
+    </table> -->
+</div>
             <!--*********************End of Body Content*************************-->
            </div>
         </div>
 
+<!--////////////////////////////////////////// THIS IS THE END OF NEW CODE FOR WALT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
             <!--*********************Start of Login panel modal dialog*************************-->
             <div id="LoginPanel">
