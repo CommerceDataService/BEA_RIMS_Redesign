@@ -332,6 +332,13 @@ i{
   text-decoration: none;
 }
 
+.ui-widget-content {
+    background-image: none;
+    background-color: #FFE;
+    border-color: grey;
+    box-shadow: box-shadow: 10px 10px 5px #888888;
+}
+
 /* ----------- Temporary fix for 3 images to show ----------- */
 #header {
   width: 100%;
