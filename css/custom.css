@@ -320,6 +320,31 @@ i{
   border-radius: 0px;
 }
 
+/* Accordion Styling */
+
+.panel-default {
+    border-color: transparent;
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.collapse.in {
+    display: block;
+    padding-left: 35px;
+}
 
 
 /* ----------- Tooltip styling ----------- */
