@@ -322,28 +322,32 @@ i{
 
 /* Accordion Styling */
 
-.panel-default {
+/*.panel-default {
     border-color: transparent;
-}
+}*/
 
 .panel-default > .panel-heading {
     color: #333;
-    background-color: transparent;
-    border-color: transparent;
+    background-color: #f5f5f5;
+    border-color: #ddd;
 }
 
 .panel {
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     background-color: #fff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    /*border: 1px solid transparent;*/
+    border-radius: 0px;
 }
 
 .collapse.in {
     display: block;
-    padding-left: 35px;
+    padding: 10px 10px 10px 10px;
+}
+
+#content #accordion h3 {
+    margin: 0px;
+    padding: 15px 0px 15px 5px;
+    border: none;
 }
 
 
