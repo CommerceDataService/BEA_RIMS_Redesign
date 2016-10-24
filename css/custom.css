@@ -339,8 +339,8 @@ i{
     border-radius: 0px;
 }
 
-.collapse.in {
-    display: block;
+.content-padding {
+    /*display: block;*/
     padding: 10px 10px 10px 10px;
 }
 
