@@ -27,6 +27,23 @@
     <link href="css/custom.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <title></title>
+
+    <script type="text/javascript">
+$(document).ready(function(){
+    $(".tip-top").tooltip({
+        placement : 'top'
+    });
+    $(".tip-right").tooltip({
+        placement : 'right'
+    });
+    $(".tip-bottom").tooltip({
+        placement : 'bottom'
+    });
+    $(".tip-left").tooltip({
+        placement : 'left'
+    });
+});
+</script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -41,11 +58,14 @@
         Here&#39;s something with a jquery tooltip.
     </p>
     <br />
-    <p id="p3" onclick='invokeRIMSdialog(this, "P3 Tooltip dialog", "Inline Content", false, 600, 400, false); return false;' title="P3 title content">
-        Here&#39;s something with a dialog tooltip. inline content - size 600X400
+    <p>
+        Here&#39;s something with a dialog tooltip. inline content - size 600X400 <a href="" class="fa fa-question-circle" id="p3" onclick='invokeRIMSdialog(this, "  ",  "Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. ", false, 300, 200, false); return false;' title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
     </p>
+
+    
+
     <br />
-    <p id="p4" onclick='invokeRIMSdialog(this, "P4 Tooltip dialog", "Inline Content", false, 600, 400, false); return false;' title="P4 title content">
+    <p id="p4" onclick='invokeRIMSdialog(this, "P4 Metropolitan Statistical Areas (MSA)", "Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. ", false, 600, 400, false); return false;' title="P4 title content">
         Here&#39;s something with a dialog tooltip. inline content - size 600X400
     </p>
     <br />
@@ -74,6 +94,13 @@
         Here&#39;s something with a dialog tooltip. img reference - undefined title - size undefined
     </p>
     <br />
+
+    <ul class="list-inline">
+        <li><a href="#" data-toggle="tooltip" class="tip-top" title="Tooltip on the top side">Tooltip on top</a></li>
+        <li><a href="#" data-toggle="tooltip" class="tip-right" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. ">Tooltip on right</a></li>
+        <li><a href="#" data-toggle="tooltip" class="tip-bottom" title="Tooltip the on bottom side">Tooltip on bottom</a></li>
+        <li><a href="#" data-toggle="tooltip" class="tip-left" title="Tooltip on the left side">Tooltip on left</a></li>
+    </ul>
 
     <script>
         var tooltipdialogpanel;
