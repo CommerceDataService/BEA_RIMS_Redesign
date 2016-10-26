@@ -116,11 +116,11 @@
                 bootstrap2Compatible: false,
                 filterTextClear: 'show all',
                 filterPlaceHolder: 'Search',
-                moveSelectedLabel: 'Move selected',
-                moveAllLabel: 'Move all',
+                moveSelectedLabel: 'Add selected',
+                moveAllLabel: 'Add all',
                 removeSelectedLabel: 'Remove selected',
-                removeAllLabel: 'Remove all',
-                moveOnSelect: true,                                                                 // true/false (forced true on androids, see the comment later)
+                removeAllLabel: 'Remove all selected',
+                moveOnSelect: false,                                                                 // true/false (forced true on androids, see the comment later)
                 preserveSelectionOnMove: false,                                                     // 'all' / 'moved' / false
                 selectedListLabel: false,                                                           // 'string', false
                 nonSelectedListLabel: false,                                                        // 'string', false
@@ -141,11 +141,11 @@
                 bootstrap2Compatible: false,
                 filterTextClear: 'show all',
                 filterPlaceHolder: 'Search',
-                moveSelectedLabel: 'Move selected',
-                moveAllLabel: 'Move all',
+                moveSelectedLabel: 'Add selected',
+                moveAllLabel: 'Add all',
                 removeSelectedLabel: 'Remove selected',
-                removeAllLabel: 'Remove all',
-                moveOnSelect: true,                                                                 // true/false (forced true on androids, see the comment later)
+                removeAllLabel: 'Remove all selected',
+                moveOnSelect: false,                                                                 // true/false (forced true on androids, see the comment later)
                 preserveSelectionOnMove: false,                                                     // 'all' / 'moved' / false
                 selectedListLabel: false,                                                           // 'string', false
                 nonSelectedListLabel: false,                                                        // 'string', false
@@ -466,7 +466,7 @@
                                     </li>
                                     <li class="menuItem">
                                         <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                        <a href="/regional/pdf/rims/rimsii_user_guide.pdf" target="_blank">FAQ's</span></a>
+                                        <a href="faq-page.html">FAQ's</span></a>
                                     </li>
                                     <li class="menuItem">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -483,7 +483,7 @@
 
                         <div class="container-fluid breadcrumb">
                             <div class="col-lg-10" style="padding-top: 8px;">
-                                <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="page-one-ordering.html" class="btn btn-default">Step 1: Region vs. Industry</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                 <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                 <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                 <a href="#" class="btn btn-default">Step 4: Checkout</a>
@@ -498,13 +498,18 @@
 
                         <!--*********************Start of Body Content*************************-->
                         <div class="container-fluid">
+
+                        <b style="font-size:115%">Step 2: Select Your Industry </b><a href="" class="fa fa-question-circle"></a>
+                        <p style="padding-top: 5px; font-size: 12px;">Hold down Ctrl to select multiple industries.</p>
+                            
                             <table border="0" cellpadding="0" cellspacing="0" style="padding-right: 10px">
                                 <tr>
                                     <td>
 
-                                        <b style="font-size:115%">Step 2: Select Your Industry</b><a href="" class="fa fa-question-circle"></a>
-                                        <br />
-                                        <br />
+                                    <br />
+
+
+
                                         <table border="0" cellpadding="0"
                                                cellspacing="0" style="width: 730px; height: 289px;">
                                             <tr>
@@ -973,7 +978,7 @@
 
                                         <span id="RIMSPlaceHolder_lblContig" style="color:Red;"></span>
                                         &nbsp;
-                                        <input class="btn rims-blue-btn btn-lg" type="submit" name="ctl00$RIMSPlaceHolder$Button1" value="Add to Cart" title="Add to Cart" style="float: right; margin-right: 38px;" />&nbsp;<!-- removed  id="RIMSPlaceHolder_Button1"  -->
+                                        <input class="btn rims-blue-btn btn-lg" type="submit" name="ctl00$RIMSPlaceHolder$Button1" value="Add to Cart" title="Add to Cart" style="float: right; margin-right: 14px;" />&nbsp;<!-- removed  id="RIMSPlaceHolder_Button1"  -->
                                         &nbsp;<br />
 
                                     </td>
