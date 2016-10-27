@@ -96,15 +96,26 @@ $(function () {
     </p>
     <br />
 
+
+<!-- ///////////// Radhika's Customized Tooltips \\\\\\\\\\\\-->
     <p>
-        Here&#39;s something with a dialog tooltip. inline content - size 600X400 <a href="" class="fa fa-question-circle" id="p3" onclick='invokeRIMSdialog(this, "  ",  "Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. ", false, 300, 200, false); return false;' title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
+        <!-- Need to remove ui-dialog-titlebar which is creating the white space at the top of the tooltip. Icon for exit button still doesn't show -->
+        jQuery UI tooltip, customized style, inline content - size 600X400 
+        <a href="" class="fa fa-question-circle" id="p3" onclick='invokeRIMSdialog(this, "  ",  "Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. ", false, 300, 200, false); return false;' title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
     </p>
 
-    <ul class="list-inline">
-        <li><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. ">Bootstrap 4 tooltip</a></li>
-    </ul>
+    <!-- Bootstrap 4 Tooltip -->
+    <p>
+    <!-- Tooltip appears on click and hover. User must click icon to close out of tooltip -->
+    Bootstrap 4 tooltip, customized style, click AND hover function
+        <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="click hover" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
+    </p>
 
-    <p>Bootstrap 3 tooltip<a type="button" class="fa fa-question-circle custom-tooltip" data-toggle="tooltip" data-placement="right" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a></p>
+    <!-- Bootstrap 3 Tooltip -->
+    <p>
+    Bootstrap 3 tooltip, customized style, hover function only
+        <a type="button" class="fa fa-question-circle custom-tooltip" data-toggle="tooltip" data-placement="right" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
+    </p>
 
     <script>
         var tooltipdialogpanel;
