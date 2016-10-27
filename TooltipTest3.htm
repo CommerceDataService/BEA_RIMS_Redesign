@@ -43,6 +43,10 @@ $(document).ready(function(){
         placement : 'left'
     });
 });
+// Function for Bootstrap 3 Tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
 </script>
 </head>
 <body>
@@ -96,11 +100,10 @@ $(document).ready(function(){
     <br />
 
     <ul class="list-inline">
-        <li><a href="#" data-toggle="tooltip" class="tip-top" title="Tooltip on the top side">Tooltip on top</a></li>
-        <li><a href="#" data-toggle="tooltip" class="tip-right" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. ">Tooltip on right</a></li>
-        <li><a href="#" data-toggle="tooltip" class="tip-bottom" title="Tooltip the on bottom side">Tooltip on bottom</a></li>
-        <li><a href="#" data-toggle="tooltip" class="tip-left" title="Tooltip on the left side">Tooltip on left</a></li>
+        <li><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. ">Bootstrap 4 tooltip</a></li>
     </ul>
+
+    <p>Bootstrap 3 tooltip<a type="button" class="fa fa-question-circle custom-tooltip" data-toggle="tooltip" data-placement="right" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a></p>
 
     <script>
         var tooltipdialogpanel;
