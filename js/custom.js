@@ -18,10 +18,17 @@
 //     }        
 // });
 
-$('.tooltip-inner').on('click', function () {
-  $(this.hash).toggleClass('in').focus();
-});
+// $('.tooltip-inner').on('click', function () {
+//   $(this.hash).toggleClass('in').focus();
+// });
 
-$('a').on('focusout', function () {
-  $(this).removeClass('in');
+// $('a').on('focusout', function () {
+//   $(this).removeClass('in');
+// });
+
+$(document).on('click', function(event) {
+	// console.log($(document).selectall(.custom-tooltip)
+  if (!$(event.target).closest('.custom-tooltip').length) {
+    // Hide the menus.
+  }
 });
