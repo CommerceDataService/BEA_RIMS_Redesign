@@ -417,6 +417,7 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
             $('a.custom-tooltip').removeAttr('aria-describedBy');
             // console.log("else working")
           }
+            $('a.custom-tooltip').on('click', function(e) {e.preventDefault(); return true;});
         });
     </script>
 <div>

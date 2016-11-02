@@ -380,32 +380,35 @@ function __doPostBack(eventTarget, eventArgument) {
 }
 //]]>
 </script>
+
+    <!-- Tooltip Script -->
     <script type="text/javascript">
-$(document).ready(function(){
-    $(".tip-right").tooltip({
-        placement : 'right'
-    });
-});
+        $(document).ready(function(){
+            $(".tip-right").tooltip({
+                placement : 'right'
+            });
+        });
 
-$(document).on('click', function(event) {
-  if ($(event.target).closest('div.in').length) {
-    $('div.in').css("display", "block")
-    // console.log("working")
-    // Hide the menus.
-  }
+        $(document).on('click', function(event) {
+          if ($(event.target).closest('div.in').length) {
+            $('div.in').css("display", "block")
+            // console.log("working")
+            // Hide the menus.
+          }
 
-  else if ($(event.target).closest('.fa-question-circle').length) {
-    $('div.in').css("display", "block")
-    // console.log("else if working")
-    // Hide the menus.
-  }
-  else{
-    $('div.in').remove();
-    $('a.custom-tooltip').removeAttr('aria-describedBy');
-    // console.log("else working")
-  }
-});
-</script>
+          else if ($(event.target).closest('.fa-question-circle').length) {
+            $('div.in').css("display", "block")
+            // console.log("else if working")
+            // Hide the menus.
+          }
+          else{
+            $('div.in').remove();
+            $('a.custom-tooltip').removeAttr('aria-describedBy');
+            // console.log("else working")
+          }
+          $('a.custom-tooltip').on('click', function(e) {e.preventDefault(); return true;});
+        });
+    </script>
 
 <script src="/regional/rims/rimsii/WebResource.axd?d=_tydoX_tT4-Z2WfxPp7Y_5VoOcrd8kJCnUKxtA0Bk7MzBOf9SpTRKGuMoaTe15cCcClA61hhKemJ67iL0&amp;t=635803038500000000" type="text/javascript"></script>
 

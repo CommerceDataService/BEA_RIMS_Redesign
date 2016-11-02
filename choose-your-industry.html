@@ -367,32 +367,34 @@
 
         //*******************
     </script>
-    <script type="text/javascript">
-$(document).ready(function(){
-    $(".tip-right").tooltip({
-        placement : 'right'
-    });
-});
+    <!-- Tooltip Script -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".tip-right").tooltip({
+                    placement : 'right'
+                });
+            });
 
-$(document).on('click', function(event) {
-  if ($(event.target).closest('div.in').length) {
-    $('div.in').css("display", "block")
-    // console.log("working")
-    // Hide the menus.
-  }
+            $(document).on('click', function(event) {
+              if ($(event.target).closest('div.in').length) {
+                $('div.in').css("display", "block")
+                // console.log("working")
+                // Hide the menus.
+              }
 
-  else if ($(event.target).closest('.fa-question-circle').length) {
-    $('div.in').css("display", "block")
-    // console.log("else if working")
-    // Hide the menus.
-  }
-  else{
-    $('div.in').remove();
-    $('a.custom-tooltip').removeAttr('aria-describedBy');
-    // console.log("else working")
-  }
-});
-</script>
+              else if ($(event.target).closest('.fa-question-circle').length) {
+                $('div.in').css("display", "block")
+                // console.log("else if working")
+                // Hide the menus.
+              }
+              else{
+                $('div.in').remove();
+                $('a.custom-tooltip').removeAttr('aria-describedBy');
+                // console.log("else working")
+              }
+                $('a.custom-tooltip').on('click', function(e) {e.preventDefault(); return true;});
+            });
+        </script>
 
     <title>RIMS II Online Order and Delivery System</title>
 
