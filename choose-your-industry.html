@@ -367,7 +367,32 @@
 
         //*******************
     </script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    $(".tip-right").tooltip({
+        placement : 'right'
+    });
+});
 
+$(document).on('click', function(event) {
+  if ($(event.target).closest('div.in').length) {
+    $('div.in').css("display", "block")
+    // console.log("working")
+    // Hide the menus.
+  }
+
+  else if ($(event.target).closest('.fa-question-circle').length) {
+    $('div.in').css("display", "block")
+    // console.log("else if working")
+    // Hide the menus.
+  }
+  else{
+    $('div.in').remove();
+    $('a.custom-tooltip').removeAttr('aria-describedBy');
+    // console.log("else working")
+  }
+});
+</script>
 
     <title>RIMS II Online Order and Delivery System</title>
 
@@ -499,7 +524,7 @@
                         <!--*********************Start of Body Content*************************-->
                         <div class="container-fluid">
 
-                        <b style="font-size:115%">Step 2: Select Your Industry </b><a href="" class="fa fa-question-circle"></a>
+                        <b style="font-size:115%">Step 2: Select Your Industry </b><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="There are two levels of industry detail in RIMS II: aggregate and detail. The level of detail used in an economic impact study is chosen to match the level of detail in the resulting findings. Multipliers for the detailed industries are less subject to aggregation bias. Both aggregate and detailed multipliers are based on the same data sources."></a>
                         <p style="padding-top: 5px; font-size: 12px;">Hold down Ctrl to select multiple industries.</p>
                             
                             <table border="0" cellpadding="0" cellspacing="0" style="padding-right: 10px">

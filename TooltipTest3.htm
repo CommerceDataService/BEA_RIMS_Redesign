@@ -31,41 +31,27 @@
 
     <script type="text/javascript">
 $(document).ready(function(){
-    $(".tip-top").tooltip({
-        placement : 'top'
-    });
     $(".tip-right").tooltip({
         placement : 'right'
     });
-    $(".tip-bottom").tooltip({
-        placement : 'bottom'
-    });
-    $(".tip-left").tooltip({
-        placement : 'left'
-    });
 });
-
-// $(document).on('click', function(event) {
-//     var chk = $(document).closest(".tooltip");
-//     console.log(chk);
-// });
 
 $(document).on('click', function(event) {
   if ($(event.target).closest('div.in').length) {
     $('div.in').css("display", "block")
-    console.log("working")
+    // console.log("working")
     // Hide the menus.
   }
 
   else if ($(event.target).closest('.fa-question-circle').length) {
     $('div.in').css("display", "block")
-    console.log("else if working")
+    // console.log("else if working")
     // Hide the menus.
   }
   else{
     $('div.in').remove();
     $('a.custom-tooltip').removeAttr('aria-describedBy');
-    console.log("else working")
+    // console.log("else working")
   }
 });
 
@@ -134,7 +120,7 @@ $(function () {
     <p class="tooltip-function">
     <!-- Tooltip appears on click and hover. User must click icon to close out of tooltip -->
     Bootstrap 4 tooltip, customized style, click AND hover function
-        <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
+        <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
     </p>
 
     <!-- Bootstrap 3 Tooltip -->

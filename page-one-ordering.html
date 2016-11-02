@@ -391,6 +391,34 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
 </script>
 
 <script src="/regional/rims/rimsii/WebResource.axd?d=dagktgv7f8XSRlNyRxdFERfiMEjZlyDzxbmDHgIdwReBTWLDp9v3UingL7nWu8M8VfVy2V3fSg1Hkkum0&amp;t=635803038500000000" type="text/javascript"></script>
+
+<!-- Tooltip Script -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".tip-right").tooltip({
+                placement : 'right'
+            });
+        });
+
+        $(document).on('click', function(event) {
+          if ($(event.target).closest('div.in').length) {
+            $('div.in').css("display", "block")
+            // console.log("working")
+            // Hide the menus.
+          }
+
+          else if ($(event.target).closest('.fa-question-circle').length) {
+            $('div.in').css("display", "block")
+            // console.log("else if working")
+            // Hide the menus.
+          }
+          else{
+            $('div.in').remove();
+            $('a.custom-tooltip').removeAttr('aria-describedBy');
+            // console.log("else working")
+          }
+        });
+    </script>
 <div>
 
   <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="87F8FA08" />
@@ -517,8 +545,7 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
                 <a href="choose-your-region.html" class="btn btn-default btn-block btn-lg rims-grey-btn">Order by Region</a>
                     <br>
                  <a href="" class="btn btn-primary rims-orange-btn">View list of 369 detailed industries</a>
-                <a href="" class="btn btn-primary rims-orange-btn">View list of 64 industry aggregates</a>                 
-                <i class="fa fa-question-circle" data-toggle="tooltip" aria-hidden="true"></i>
+                <a href="" class="btn btn-primary rims-orange-btn">View list of 64 industry aggregates</a>
 
             </div>
                     
