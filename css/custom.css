@@ -361,17 +361,11 @@ i{
   text-decoration: none;
 }
 
-.ui-widget-content {
-    background-image: none;
-    background-color: #FFE;
-    border-color: grey;
-    box-shadow: box-shadow: 10px 10px 5px #888888;
-}
-
 .custom-tooltip + .tooltip > .tooltip-inner {
   background-color: #fffeea;
   border: 1px solid grey;
   text-align: left;
+  padding: 10px;
 }
 
 .tooltip {
@@ -407,7 +401,7 @@ i{
   margin-left: 3px;
 }
 .tooltip-inner {
-  max-width: 200px;
+  max-width: 415px;
   padding: 3px 8px;
   color: black;
   text-align: center;
@@ -418,7 +412,7 @@ i{
   position: absolute;
   width: 0;
   height: 0;
-  border-color: transparent;
+  border-color: 1px solid grey;
   border-style: solid;
 }
 .tooltip.top .tooltip-arrow {
@@ -426,35 +420,35 @@ i{
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #fffeea;
+  border-top-color: grey;
 }
 .tooltip.top-left .tooltip-arrow {
   right: 5px;
   bottom: 0;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #fffeea;
+  border-top-color: grey;
 }
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
   left: 5px;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #fffeea;
+  border-top-color: grey;
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #fffeea;
+  border-right-color: grey;
 }
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #fffeea;
+  border-left-color: grey;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
@@ -477,6 +471,69 @@ i{
   border-width: 0 5px 5px;
   border-bottom-color: #fffeea;
 }
+
+/* ----------------   Bootstrap Affix  -------------------- */
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+#masthead { 
+ min-height:250px;
+}
+
+#masthead h1 {
+ font-size: 30px;
+ line-height: 1;
+ padding-top:20px;
+}
+
+#masthead .well {
+ margin-top:8%;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 50px;
+  }
+}
+
+.navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}
+
+.affix-top,.affix{
+ position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  border:0 #eee solid;
+  border-right-width:5px;
+}
+
+
+
 
 
 /* ----------- Temporary fix for 3 images to show ----------- */
