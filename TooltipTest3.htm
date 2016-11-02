@@ -29,37 +29,29 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <title></title>
 
+    <!-- Tooltip Script -->
     <script type="text/javascript">
-$(document).ready(function(){
-    $(".tip-right").tooltip({
-        placement : 'right'
-    });
-});
+        $(document).ready(function(){
+            $(".tip-right").tooltip({
+                placement : 'right'
+            });
+        });
 
-$(document).on('click', function(event) {
-  if ($(event.target).closest('div.in').length) {
-    $('div.in').css("display", "block")
-    // console.log("working")
-    // Hide the menus.
-  }
+        $(document).on('click', function(event) {
+          if ($(event.target).closest('div.in').length) {
+            $('div.in').css("display", "block");
+          }
 
-  else if ($(event.target).closest('.fa-question-circle').length) {
-    $('div.in').css("display", "block")
-    // console.log("else if working")
-    // Hide the menus.
-  }
-  else{
-    $('div.in').remove();
-    $('a.custom-tooltip').removeAttr('aria-describedBy');
-    // console.log("else working")
-  }
-});
-
-// Function for Bootstrap 3 Tooltip
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-</script>
+          else if ($(event.target).closest('.fa-question-circle').length) {
+            $('div.in').css("display", "block");
+          }
+          else{
+            $('div.in').remove();
+            $('a.custom-tooltip').removeAttr('aria-describedBy');
+          }
+          $('a.custom-tooltip').on('click', function(e) {e.preventDefault(); return true;});
+        });
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -119,15 +111,15 @@ $(function () {
     <!-- Bootstrap 4 Tooltip -->
     <p class="tooltip-function">
     <!-- Tooltip appears on click and hover. User must click icon to close out of tooltip -->
-    Bootstrap 4 tooltip, customized style, click AND hover function
+    Bootstrap 4 tooltip, final customized style, click question mark to show, click anywhere else to hide
         <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
     </p>
 
-    <!-- Bootstrap 3 Tooltip -->
+    <!-- Bootstrap 3 Tooltip 
     <p>
     Bootstrap 3 tooltip, customized style, hover function only
         <a type="button" class="fa fa-question-circle custom-tooltip" data-toggle="tooltip" data-placement="right" title="Metropolitan Statistical Areas have at least one urbanized area of 50,000 or more population, plus adjacent territory that has a high degree of social and economic integration with the core as measured by commuting ties. "></a>
-    </p>
+    </p>-->
 
     <script>
         var tooltipdialogpanel;
