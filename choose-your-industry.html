@@ -367,7 +367,29 @@
 
         //*******************
     </script>
+    <!-- Tooltip Script -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".tip-right").tooltip({
+                    placement : 'right'
+                });
+            });
 
+            $(document).on('click', function(event) {
+              if ($(event.target).closest('div.in').length) {
+                $('div.in').css("display", "block");
+              }
+
+              else if ($(event.target).closest('.fa-question-circle').length) {
+                $('div.in').css("display", "block");
+              }
+              else{
+                $('div.in').remove();
+                $('a.custom-tooltip').removeAttr('aria-describedBy');
+              }
+                $('a.custom-tooltip').on('click', function(e) {e.preventDefault(); return true;});
+            });
+        </script>
 
     <title>RIMS II Online Order and Delivery System</title>
 
@@ -462,7 +484,7 @@
                                     </li>
                                     <li class="menuItem">
                                         <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                        <a href="industrylist.aspx?List=3">About RIMS</a>
+                                        <a href="index.html">About RIMS</a>
                                     </li>
                                     <li class="menuItem">
                                         <i class="fa fa-question-circle" aria-hidden="true"></i>
@@ -470,7 +492,7 @@
                                     </li>
                                     <li class="menuItem">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
-                                        <a href="help.aspx">Contact Us</a>
+                                        <a href="contact-us.html">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -499,7 +521,7 @@
                         <!--*********************Start of Body Content*************************-->
                         <div class="container-fluid">
 
-                        <b style="font-size:115%">Step 2: Select Your Industry </b><a href="" class="fa fa-question-circle"></a>
+                        <b style="font-size:115%">Step 2: Select Your Industry </b><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="There are two levels of industry detail in RIMS II: aggregate and detail. The level of detail used in an economic impact study is chosen to match the level of detail in the resulting findings. Multipliers for the detailed industries are less subject to aggregation bias. Both aggregate and detailed multipliers are based on the same data sources."></a>
                         <p style="padding-top: 5px; font-size: 12px;">Hold down Ctrl to select multiple industries.</p>
                             
                             <table border="0" cellpadding="0" cellspacing="0" style="padding-right: 10px">
