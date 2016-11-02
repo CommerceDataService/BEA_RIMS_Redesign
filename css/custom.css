@@ -361,13 +361,6 @@ i{
   text-decoration: none;
 }
 
-.ui-widget-content {
-    background-image: none;
-    background-color: #FFE;
-    border-color: grey;
-    box-shadow: box-shadow: 10px 10px 5px #888888;
-}
-
 .custom-tooltip + .tooltip > .tooltip-inner {
   background-color: #fffeea;
   border: 1px solid grey;

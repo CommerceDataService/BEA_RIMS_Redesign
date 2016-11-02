@@ -381,29 +381,6 @@ function __doPostBack(eventTarget, eventArgument) {
 //]]>
 </script>
 
-    <!-- Tooltip Script -->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".tip-right").tooltip({
-                placement : 'right'
-            });
-        });
-
-        $(document).on('click', function(event) {
-          if ($(event.target).closest('div.in').length) {
-            $('div.in').css("display", "block");
-          }
-
-          else if ($(event.target).closest('.fa-question-circle').length) {
-            $('div.in').css("display", "block");
-          }
-          else{
-            $('div.in').remove();
-            $('a.custom-tooltip').removeAttr('aria-describedBy');
-          }
-          $('a.custom-tooltip').on('click', function(e) {e.preventDefault(); return true;});
-        });
-    </script>
 
 <script src="/regional/rims/rimsii/WebResource.axd?d=_tydoX_tT4-Z2WfxPp7Y_5VoOcrd8kJCnUKxtA0Bk7MzBOf9SpTRKGuMoaTe15cCcClA61hhKemJ67iL0&amp;t=635803038500000000" type="text/javascript"></script>
 
@@ -434,11 +411,9 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
             </div> -->
             <!--*********************End of Login controls*************************-->
 
-<!--////////////////////////////////////////// THIS IS NEW CODE FOR WALT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-
 <!--*********************START OF NEW MENU*************************-->
         <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3" style="padding: 0">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3"  style="padding: 0">
                 <div id="sidebarLeft_wrapper">
                     <div class="sidebarLeft_baseInsert">
 <!--                         <a class="logo" href="../index.cfm"></a> -->
@@ -498,112 +473,40 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
             <!--*********************END OF NEW MENU*************************-->
 
     <div class="container col-lg-10 col-md-9 col-sm-8 col-xs-9" >
-    <!--********************* Breadcrumbs *********************-->
-
-        <div class="container-fluid breadcrumb">
-<!--             <div class="col-lg-10 btn-group btn-breadcrumb" style="padding-top: 8px;">
-                <a href="#" class="btn btn-default">Step 1: Region vs. Industry</a>
-                <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a>
-                <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a>
-                <a href="#" class="btn btn-default">Step 4: Checkout</a>
-            </div> -->
-
-            <div class="col-lg-10" style="padding-top: 8px;">
-                <a href="page-one-ordering.html" class="btn btn-default">Step 1: Region vs. Industry</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                <a href="#" class="btn btn-default">Step 2: Choose Multipliers</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                <a href="#" class="btn btn-default">Step 3: View Shopping Cart</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                <a href="#" class="btn btn-default">Step 4: Checkout</a>
-            </div>
-
-            <div class="col-lg-2 shopping-cart-section" style="display: inline-flex;">
-                <p style="padding: 15px 20px 0 0 ;">Shopping Cart</p>
-                <div class="shopping-cart-number">0</div> <!-- This number needs to respond to the number of items in the users shopping cart -->
-            </div>
-        </div>
-
-
     <!--*********************Start of Body Content*************************-->
-               
-<div class="container-fluid">
+        <div class="row">
+        <div class="landing-page-div">
+            <h2 class="landing-page-heading"><strong>Contact Us</strong></h2>     
 
-    <h3 class="landing-page-heading"><strong>Step 2: Define your region</strong></h3>
-    <p>NOTE: If you need multipliers for one industry for a state, <a href="choose-your-industry.html"> order by industry.</a> <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="If you order by industry, you will receive multipliers for all 50 states and the District of Columbia for a particular industry. If you order by region, you will receive multipliers for all industries within a particular region."></a>
-    <br />
-    Multipliers will be provided for the region as a whole, not for each county or state within the region. <br />
-    The statistical areas below are defined (geographically delineated) by the Office of Management and Budget in bulletin no. 13-01 issued February 28, 2013.
-    </p>
-
-        <table class="table table-hover region-menu">
-                <tr>
-                    <td><a href=""> Customized Region </a><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="Customizing a region allows you to select multipliers by contiguous counties or states."></a></td>
-                </tr>
-                <tr>
-                    <td><a href="#"> Metropolitan Statistical Areas (MSA) </a><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="A metropolitan statistical area (MSA) is a geographical region with a relatively high population density at its core and close economic ties throughout the area. A typical MSA is centered on a single large city that wields substantial influence over the region (e.g., Chicago)."></a></td>
-                </tr>
-                <tr>
-                    <td><a href=""> Metropolitan Divisions </a><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="If specified criteria are met, a metropolitan statistical area containing a single core with a population of 2.5 million or more may be subdivided to form smaller groupings of counties referred to as 'metropolitan divisions.' There are 11 Metropolitan Statistical Areas (MSAs) deemed large enough to be subdivided into metropolitan divisions."></a></td>
-                </tr>
-                <tr>
-                    <td><a href=""> Micropolitan Statistical Areas</a><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="Each micropolitan statistical area must have at least one urban cluster of at least 10,000 but less than 50,000 population. There are 382 metropolitan statistical areas and 551 micropolitan statistical areas in the U.S."></a></td>
-                </tr>
-                <tr>
-                    <td><a href=""> Combined Statistical<br /> Areas (CSA)</a><a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="If specified criteria are met, adjacent Metropolitan and Micropolitan Statistical Areas, in various combinations, may become the components of a set of complementary areas called Combined Statistical Areas. For instance, a Combined Statistical Area may comprise two or more Metropolitan Statistical Areas, a Metropolitan Statistical Area and a Micropolitan Statistical Area, two or more Micropolitan Statistical Areas, or multiple Metropolitan and Micropolitan Statistical Areas that have social and economic ties as measured by commuting, but at lower levels than are found among counties within Metropolitan and Micropolitan Statistical Areas."></a></td>
-                </tr>
-        </table>
-
-
-<!--         <ul class="table">
-            <a href=""><li>Customized Region <a href="" class="fa fa-question-circle"></a></li></a>
-            <li>Metropolitan Statistical Areas (MSA) <a href="" class="fa fa-question-circle"></a></li>
-            <li>Metropolitan Divisions <a href="" class="fa fa-question-circle"></a></li>
-            <li>Micropolitan Statistical Areas <a href="" class="fa fa-question-circle"></a></li>
-            <li>Combined Statistical Areas <a href="" class="fa fa-question-circle"></a></li>
-        </ul> -->
-
-
-    <h3 class="landing-page-heading"><strong>Step 2a: Name your Region</strong></h3>
-    <p>You may change the name of your region at checkout.<br />
-    You may use the Auto Name Region button if you selected a statistical area.
-    </p>
-
-    <div class="form-group">
-        <!-- <label for="inputPassword" class="control-label"></label> -->
-        <div class="form-inline row">
-          <div class="form-group col-lg-10">
-            <input type="" data-minlength="6" class="form-control" id="inputPassword" placeholder="" required style="width: 450px;">
-            <button type="submit" class="btn rims-blue-btn" style="margin: -2px 0 0 -5px;">Auto Name Region</button>
-            <div class="help-block">Do not use special characters such as @ # $ % &amp; : or ; in your region name.</div>
-          </div>
-
+            <p class="landing-page-p">If you have any additional questions on ordering RIMS II multipliers, please refer to the <a href="faq-page.html">FAQ section</a> or the RIMS user guide.</p>
+            <p>If you would like more information on ordering RIMS II multipliers, please contact the RIMS staff at 301-278-9313 or <a href="RIMS@bea.gov">RIMS@bea.gov</a>.</p>
         </div>
-    </div>
-<button href="" class="btn rims-blue-btn">Add to Cart</button>
-<!--     <table>
+        </div>
+<!--     <span style="font-size:115%"><b>What industry detail is available?</b>
+    </span><br /><br />
+    <ul>
+        <li>Multipliers are provided for <a href="download/369IndustryListA.pdf"
+            class="all_links" target="_blank">369 detailed industries</a><span class="file_size">
+                (PDF)</span> and <a href="download/64IndustryListB.pdf"
+            class="all_links" target="_blank">64 industry aggregates</a><span class="file_size">
+                (PDF)</span>.
+    </ul> -->
+    <!-- <br /> -->
+<!--     <table id="buttons" width="100%">
         <tr>
-            <td colspan="2" style="height: 10px">
-                <input name="ctl00$RIMSPlaceHolder$txtRegName" type="text" id="RIMSPlaceHolder_txtRegName" style="width:231px;" /><input type="submit" name="ctl00$RIMSPlaceHolder$btnAutoName" value="Auto Name Region" id="RIMSPlaceHolder_btnAutoName" />
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td colspan="2" style="height: 9px">
-                <span id="RIMSPlaceHolder_lblContig" style="color:Red;"></span><span id="RIMSPlaceHolder_lblValidState" style="color:Red;"></span></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="height: 14px"></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="height: 20px">
-                <input type="submit" name="ctl00$RIMSPlaceHolder$btnAddCart" value="Add to Cart" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$RIMSPlaceHolder$btnAddCart&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="RIMSPlaceHolder_btnAddCart" />&nbsp;
-                
-            </td>
+            <td>
+                <input type="submit" name="ctl00$RIMSPlaceHolder$btnPlaceOrder" value="Place an Order" id="RIMSPlaceHolder_btnPlaceOrder" />&nbsp;
+                <input type="submit" name="ctl00$RIMSPlaceHolder$btnViewPurchased" value="View Multipliers" id="RIMSPlaceHolder_btnViewPurchased" />
+                </td>
+            <td>
+                </td>
         </tr>
     </table> -->
-</div>
+
             <!--*********************End of Body Content*************************-->
            </div>
         </div>
 
-<!--////////////////////////////////////////// THIS IS THE END OF NEW CODE FOR WALT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
             <!--*********************Start of Login panel modal dialog*************************-->
             <div id="LoginPanel">
