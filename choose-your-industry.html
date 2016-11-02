@@ -377,20 +377,15 @@
 
             $(document).on('click', function(event) {
               if ($(event.target).closest('div.in').length) {
-                $('div.in').css("display", "block")
-                // console.log("working")
-                // Hide the menus.
+                $('div.in').css("display", "block");
               }
 
               else if ($(event.target).closest('.fa-question-circle').length) {
-                $('div.in').css("display", "block")
-                // console.log("else if working")
-                // Hide the menus.
+                $('div.in').css("display", "block");
               }
               else{
                 $('div.in').remove();
                 $('a.custom-tooltip').removeAttr('aria-describedBy');
-                // console.log("else working")
               }
                 $('a.custom-tooltip').on('click', function(e) {e.preventDefault(); return true;});
             });
