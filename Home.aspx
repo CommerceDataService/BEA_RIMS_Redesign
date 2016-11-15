@@ -13,17 +13,14 @@
             <div class="landing-page-div">
                 <h2 class="landing-page-heading"><strong>Welcome to RIMS II Online Order and Delivery System</strong></h2>
 
-                <p class="landing-page-p">The Regional Input-Output Modeling System (RIMS II), a regional economic model, is a tool used by investors, planners, and elected officials to objectively assess the potential economic impacts of various projects. This model produces multipliers that are used in economic impact studies to estimate the total impact of a project on a region.</p>
+                <p class="landing-page-p">he Regional Input-Output Modeling System (RIMS II), a regional economic model, is a tool used by investors, planners, and elected officials to objectively assess the potential economic impacts of various projects. This model produces multipliers that are used in economic impact studies to estimate the total impact of a project on a region. The idea behind the results of RIMS II is that an initial change in economic activity results in other rounds of spending—for example, building a new road will lead to increased production of asphalt and concrete. The increased production of asphalt and concrete will lead to more mining. Workers benefiting from these increases will spend more, perhaps by eating out at nicer restaurants or splurging more on entertainment.</p>
             </div>
             <div class="landing-page-div">
                 <h3 class="landing-page-heading"><b>What are RIMS II multipliers?</b></h3>
 
-                <p class="landing-page-p">RIMS II input-output multipliers show how local demand shocks affect total gross output, value added, earnings, and employment in the region.</p>
+                <p class="landing-page-p">Regional Input-Output Modeling System (RIMS II) multipliers provide a measure of the effects of local demand shocks on total gross output, value added, earnings, and employment. The multipliers are used by investors, planners, and elected officials to objectively assess the potential economic impacts of various projects. </p>
 
-                <p class="landing-page-p">
-                    RIMS II multipliers based on 2007 national benchmark input-output data and 2013 regional data were released in November 2015.
-          The multipliers will be updated with 2014 regional data in 2016.
-                </p>
+                <p class="landing-page-p">RIMS II multipliers are based on 2007 national benchmark input-output data and 2013 regional data. These multipliers were first released in November 2015. Updated multipliers based on 2007 national benchmark input-output data and 2015 regional data will be released in December 2016. </p>
 
                 <p class="landing-page-p">RIMS II multipliers incorporating BEA&#39;s annual input-output accounts have been discontinued.</p>
             </div>
