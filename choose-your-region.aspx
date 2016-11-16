@@ -288,7 +288,7 @@
                     <div class="form-inline row">
                         <div class="form-group col-lg-10">
                             <asp:TextBox ID="txtRegName" runat="server" ClientIDMode="Static" CssClass="form-control" Width="450px" placeholder="Please enter a descriptive name for your region" required></asp:TextBox>
-                            <input id="btnAutoName" type="button" onclick="autoname();" value="Auto Region Name" class="btn rims-blue-btn" style="margin: -2px 0 0 -5px; background-color: #005189;"/>
+                            <input id="btnAutoName" type="button" onclick="autoname();" value="Use Statistical Area Name" class="btn rims-blue-btn" style="margin: -2px 0 0 -5px; background-color: #005189;"/>
                             <div class="help-block">Do not use special characters such as @ # $ % &amp; : or ; in your region name.</div>
                         </div>
 
