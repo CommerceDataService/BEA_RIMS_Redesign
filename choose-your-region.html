@@ -552,15 +552,6 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
         </table>
 
 
-<!--         <ul class="table">
-            <a href=""><li>Customized Region <a href="" class="fa fa-question-circle"></a></li></a>
-            <li>Metropolitan Statistical Areas (MSA) <a href="" class="fa fa-question-circle"></a></li>
-            <li>Metropolitan Divisions <a href="" class="fa fa-question-circle"></a></li>
-            <li>Micropolitan Statistical Areas <a href="" class="fa fa-question-circle"></a></li>
-            <li>Combined Statistical Areas <a href="" class="fa fa-question-circle"></a></li>
-        </ul> -->
-
-
     <h3 class="landing-page-heading"><strong>Step 2a: Name your Region</strong></h3>
     <p>You may change the name of your region at checkout.<br />
     You may use the Auto Name Region button if you selected a statistical area.
@@ -571,7 +562,9 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
         <div class="form-inline row">
           <div class="form-group col-lg-10">
             <input type="" data-minlength="6" class="form-control" id="inputPassword" placeholder="" required style="width: 450px;">
-            <button type="submit" class="btn rims-blue-btn" style="margin: -2px 0 0 -5px;">Use Statisical Area Name</button> <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="The 'Use Statistical Area Name' button will automatically enter the area’s official name in the space bar. You may also type in a custom region name if you prefer."></a>
+            <!-- START: NEEDS TO BE ADDED TO ASP PAGE -->
+            <button type="submit" class="btn rims-blue-btn" style="margin: -2px 0 0 -5px;">Use Statisical Area Name</button> <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="This button will automatically enter the area’s official name in the space bar. You may also type in a custom region name if you prefer."></a>
+            <!-- END: NEEDS TO BE ADDED TO ASP PAGE -->
             <div class="help-block">Do not use special characters such as @ # $ % &amp; : or ; in your region name.</div>
           </div>
 
