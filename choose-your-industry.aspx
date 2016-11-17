@@ -4,6 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
     <link href="_css/bootstrap-duallistbox.min.css" rel="stylesheet">
     <script type="text/javascript" src="_scripts/jquery.bootstrap-duallistbox.min.js"></script>
+    <script type="text/javascript" src="_scripts/jquery.bootstrap-duallistbox-custom.js"></script>
     <title>Choose Your Industry</title>
 
     <script>

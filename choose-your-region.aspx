@@ -7,6 +7,7 @@
 
     <link href="_css/bootstrap-duallistbox.min.css" rel="stylesheet">
     <script type="text/javascript" src="_scripts/jquery.bootstrap-duallistbox.js"></script>
+    <script type="text/javascript" src="_scripts/jquery.bootstrap-duallistbox-custom.js"></script>
     <script>
         $(function () {
 
@@ -156,9 +157,7 @@
                     NOTE: If you need multipliers for one industry for a state, <a href="choose-your-industry.aspx">order by industry.</a>
                     <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="If you order by industry, you will receive multipliers for all 50 states and the District of Columbia for a particular industry. If you order by region, you will receive multipliers for all industries within a particular region."></a>
                     <br />
-                    Multipliers will be provided for the region as a whole, not for each county or state within the region.
-                    <br />
-                    The statistical areas below are defined (geographically delineated) by the Office of Management and Budget in bulletin no. 13-01 issued February 28, 2013.
+                    You will receive multipliers for an aggregation of the counties in the region, not for each county. If you want to receive multipliers for individual counties, you need to order them separately. The statistical areas below are defined (geographically delineated) by the Office of Management and Budget in bulletin no. 13-01 issued February 28, 2013.
                 </p>
                 <div>
                     <div style="float: left; width: 20%">
@@ -288,7 +287,7 @@
                     <div class="form-inline row">
                         <div class="form-group col-lg-10">
                             <asp:TextBox ID="txtRegName" runat="server" ClientIDMode="Static" CssClass="form-control" Width="450px" placeholder="Please enter a descriptive name for your region" required></asp:TextBox>
-                            <input id="btnAutoName" type="button" onclick="autoname();" value="Auto Region Name" class="btn rims-blue-btn" style="margin: -2px 0 0 -5px; background-color: #005189;"/>
+                            <input id="btnAutoName" type="button" onclick="autoname();" value="Use Statistical Area Name" class="btn rims-blue-btn" style="margin: -2px 0 0 -5px; background-color: #005189;"/>
                             <div class="help-block">Do not use special characters such as @ # $ % &amp; : or ; in your region name.</div>
                         </div>
 
