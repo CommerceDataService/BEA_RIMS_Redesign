@@ -472,6 +472,22 @@ i{
   border-bottom-color: #fffeea;
 }
 
+.addAll:before {
+  content: "Add All"
+}
+
+.addSelected:before {
+  content: "Add"
+}
+
+.removeSelected:before {
+  content: "Remove"
+}
+
+.removeAll:before {
+  content: "Remove All"
+}
+
 /* ----------------   Bootstrap Affix  -------------------- */
 /*
 A Bootstrap 3.1 affix sidebar template
