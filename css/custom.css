@@ -312,7 +312,7 @@ i{
 }
 
 #content .table > tbody > tr > td {
-  padding: 20px 15px 20px 20px;
+  padding: 10px 15px 10px 10px;
   border-top: 1px solid black;
 }
 
@@ -470,6 +470,22 @@ i{
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #fffeea;
+}
+
+.addAll:before {
+  content: "Add All"
+}
+
+.addSelected:before {
+  content: "Add"
+}
+
+.removeSelected:before {
+  content: "Remove"
+}
+
+.removeAll:before {
+  content: "Remove All"
 }
 
 /* ----------------   Bootstrap Affix  -------------------- */
