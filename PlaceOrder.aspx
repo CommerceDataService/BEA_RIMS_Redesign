@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="row col-lg-6 col-md-6 col-sm-6">
-                    <a href="choose-your-region..aspx"><img src="images/BEA-RIMS-Region-Infographic.png" width="200" class="responsive-image"></a> 
+                    <a href="choose-your-region.aspx"><img src="images/BEA-RIMS-Region-Infographic.png" width="200" class="responsive-image"></a> 
                     <br>
                     <%--<a href="choose-your-region.aspx" class="btn btn-default btn-block btn-lg order-buttons">Order by Region</a>--%>
                     <a href="choose-your-region.aspx" class="btn btn-default btn-block btn-lg rims-grey-btn">Order by Region</a>
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="row col-lg-6 col-md-6 col-sm-6 column-margin">
-                    <a href="choose-your-region.aspx"><img src="images/BEA-RIMS-Region-Infographic.png" width="200" class="responsive-image"></a> 
+                    <a href="choose-your-industry.aspx"><img src="images/BEA-RIMS-Industry-Infographic.png" width="200" class="responsive-image"></a> 
                     <br>
                     <a href="choose-your-industry.aspx" class="btn btn-default btn-block btn-lg rims-grey-btn">Order by Industry</a>
                 </div>
