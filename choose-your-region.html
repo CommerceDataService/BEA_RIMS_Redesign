@@ -58,6 +58,9 @@
 <!-- Radhika Custom Styles -->
   <link href="css/custom.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
+      <!-- START: NEEDS TO BE ADDED TO ASP PAGE -->
+    <script type="text/javascript" src="js/jquery.bootstrap-duallistbox-custom.js"></script>
+    <!-- END: NEEDS TO BE ADDED TO ASP PAGE -->
 
 <script type="text/javascript">
   //$(document).ready(function() {
@@ -526,11 +529,10 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
                
 <div class="container-fluid">
 
-    <h3 class="landing-page-heading"><strong>Step 2: Define your region</strong></h3>
+    <h3 class="landing-page-heading"><strong>Step 2.1: Define your region</strong></h3>
     <p>NOTE: If you need multipliers for one industry for a state, <a href="choose-your-industry.html"> order by industry.</a> <a href="#" data-toggle="tooltip" class="fa fa-question-circle tip-right custom-tooltip" data-trigger="" title="If you order by industry, you will receive multipliers for all 50 states and the District of Columbia for a particular industry. If you order by region, you will receive multipliers for all industries within a particular region."></a>
     <br />
-    Multipliers will be provided for the region as a whole, not for each county or state within the region. <br />
-    The statistical areas below are defined (geographically delineated) by the Office of Management and Budget in bulletin no. 13-01 issued February 28, 2013.
+    You will receive multipliers for an aggregation of the counties in the region, not for each county. If you want to receive multipliers for individual counties, you need to order them separately. The statistical areas below are defined (geographically delineated) by the Office of Management and Budget in bulletin no. 13-01 issued February 28, 2013.
     </p>
 
         <table class="table table-hover region-menu">
@@ -552,7 +554,7 @@ function ServerLoginSubmit(arg, context){ WebForm_DoCallback('ctl00',arg,ServerL
         </table>
 
 
-    <h3 class="landing-page-heading"><strong>Step 2a: Name your Region</strong></h3>
+    <h3 class="landing-page-heading"><strong>Step 2.2: Name your Region</strong></h3>
     <p>You may change the name of your region at checkout.<br />
     You may use the Auto Name Region button if you selected a statistical area.
     </p>
